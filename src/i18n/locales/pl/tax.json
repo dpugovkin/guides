@@ -1,0 +1,57 @@
+{
+  "guides": {
+    "calculator": {
+      "title": "Kalkulator podatków przy sprzedaży mieszkania na Ukrainie",
+      "description": "Cena sprzedaży, kolejność transakcji w roku, PIT, opłata wojskowa, opłata skarbowa, notariusz — kwota netto w USD.",
+      "metaTitle": "Kalkulator podatków przy sprzedaży mieszkania na Ukrainie",
+      "subtitle": "Ile zostanie po podatkach i opłatach na Ukrainie przed legalizacją środków w Polsce"
+    },
+    "tax": {
+      "applyNet": "Wstaw ${{net}} w pole „Po podatkach na Ukrainie”",
+      "exchangeRate": {
+        "loading": "Ładowanie kursu NBU…",
+        "nbu": "Kurs NBU: {{rate}} UAH/USD ({{date}})",
+        "fallback": "Kurs NBU niedostępny — używany {{rate}} UAH/USD",
+        "refresh": "Odśwież",
+        "refreshAria": "Odśwież kurs NBU"
+      },
+      "inputs": {
+        "sharedTitle": "Parametry wspólne",
+        "sharedHint": "Pełny rachunek kosztów sprzedawcy na Ukrainie; wynik netto można przenieść do poradnika o legalizacji w Polsce.",
+        "saleOrderLabel": "Sprzedaże mieszkań w roku kalendarzowym",
+        "saleOrderFirst": "1.",
+        "saleOrderSecond": "2.",
+        "saleOrderThird": "3.+",
+        "saleOrderSecondNote": "2. sprzedaż: 5% PIT + 5% opłaty wojskowej od ceny umowy — nawet przy własności powyżej 3 lat (art. 172 Kodeksu podatkowego UA).",
+        "tenureDisabledNote": "Okres własności liczy się tylko przy 1. sprzedaży w roku.",
+        "purchasePriceLabel": "Cena nabycia mieszkania",
+        "purchasePriceHint": "Przy 3.+ sprzedaży: 18% PIT od zysku (sprzedaż − nabycie). Bez podania — do szacunku brana jest cała cena sprzedaży.",
+        "netHint": "Po wszystkich kosztach sprzedawcy na UA (patrz rozpiska powyżej) — baza dla sposobu 1 lub 2.",
+        "priceLabel": "Cena sprzedaży mieszkania",
+        "tenureLabel": "Okres własności",
+        "tenureMore": "ponad 3 lata",
+        "tenureLess": "poniżej 3 lat",
+        "netLabel": "Po podatkach na Ukrainie (USD)",
+        "currency": "USD"
+      },
+      "result": {
+        "label": "Koszty przy sprzedaży na Ukrainie",
+        "salePrice": "Cena w umowie",
+        "sellerTotal": "Razem po stronie sprzedawcy",
+        "buyerNote": "Osobno płaci nabywca (nie zmniejsza Twojej kwoty netto):",
+        "netLabel": "Po podatkach na Ukrainie",
+        "taxableProfit": "Zysk dla PIT: ${{profit}} (sprzedaż − ${{purchase}} nabycie)",
+        "pitOnProfit": "18% od zysku",
+        "footnote": "Art. 172 Kodeksu podatkowego UA: 1. (>3 l.) — 0%/0%; 1. (<3 l.) — 5%+5%; 2. — 5%+5%; 3.+ — 18% od zysku + 5% wojskowy. Notariusz {{notaryUah}} UAH + zaświadczenia {{docsUah}} UAH po kursie NBU.",
+        "lines": {
+          "pit": "PIT",
+          "military": "Opłata wojskowa",
+          "stateDuty": "Opłata skarbowa (poświadczenie umowy)",
+          "notary": "Usługi notarialne",
+          "docs": "Zaświadczenia, książka wieczysta techniczna",
+          "pension": "Opłata emerytalna"
+        }
+      }
+    }
+  }
+}

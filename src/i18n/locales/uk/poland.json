@@ -1,0 +1,570 @@
+{
+  "guides": {
+    "poland": {
+      "title": "Легалізація в Польщі коштів з продажу нерухомості в Україні",
+      "description": "Продаж нерухомості в UA → легальні кошти в польському банку. Два способи, калькулятор податків і документів.",
+      "metaTitle": "Легалізація в Польщі коштів з продажу нерухомості в Україні",
+      "subtitle": "Легалізація в PL: сума після податків UA, два способи перевезення, пакет для банку",
+      "netSection": {
+        "title": "Після податків в Україні",
+        "inputLabel": "Сума на руках (USD)",
+        "hint": "Введіть суму після податків у Україні — від неї рахуються способи легалізації в Польщі нижче. Не пов’язана з калькулятором у наступному блоці."
+      },
+      "taxCalcAccordion": {
+        "title": "Калькулятор податків при продажу в Україні",
+        "subtitle": "Окремо — не змінює суму вище",
+        "independentNote": "Поля тут незалежні від «Після податків в Україні». Рахують лише витрати при продажу в UA; результат можна вручну перенести в поле зверху.",
+        "guideLink": "Окремий гайд з повним калькулятором"
+      },
+      "methods": {
+        "sectionTitle": "Оберіть легальний спосіб",
+        "border": {
+          "title": "Спосіб 1: через кордон",
+          "short": "готівка UA → обмін → декларації",
+          "intro": "Зняття гривні в Україні, обмін на USD, перевезення через кордон з митними деклараціями UA та PL, внесення в банк у день приїзду."
+        },
+        "atm": {
+          "title": "Спосіб 2: банкомат + каса",
+          "short": "картка UA → ATM у PL → внесення",
+          "intro": "Гроші залишаються на українській картці (гривневий рахунок). Зняття в польському банкоматі, збереження чека, потім внесення готівки в касі свого банку з тим самим пакетом документів про продаж квартири — без перевезення валюти через кордон.",
+          "paramsTitle": "Параметри способу 2 (банкомат + каса)",
+          "stepsTitle": "Покроково",
+          "steps": [
+            "Підготувати пакет про походження коштів: договір продажу (UA), податок, виписки з UA-рахунків.",
+            "Зняти готівку в банкоматі польського банку з української картки — зберегти чек (дата, сума, банкомат).",
+            "У день зняття або найближчим часом внести готівку в касі свого польського банку, пред’явивши документи та чеки ATM.",
+            "Ліміт UA-картки змушує кілька тижневих циклів — це не «дроблення». Не знімайте менше ліміту «для непомітності» і не додавайте зайвих операцій; на кожен цикл — чек ATM, внесення в касі, той самий пакет документів."
+          ],
+          "cardsLabel": "Кількість карток (UA)",
+          "cardsHint": "{{cards}} × {{weeklyUah}} грн/тижд. ≈ ${{perWeekUsd}}/тижд.",
+          "weeklyLimitLabel": "Ліміт зняття на тиждень (грн на 1 картку)",
+          "weeklyLimitHint": "Ліміт у гривні на рахунку картки; у польському ATM отримаєте PLN за курсом мережі.",
+          "stats": {
+            "weeks": "тижнів зняття",
+            "perWeekUah": "грн на тиждень (усі картки)",
+            "perWeekUsd": "≈ USD на тиждень (курс {{rate}})"
+          },
+          "verdict": {
+            "label": "Висновок для способу 2",
+            "body": "Після податків потрібно <strong>${{net}}</strong>. При {{cards}} {{cardsWord}} і <strong>{{weeklyUah}} грн</strong>/тижд. на картку (≈ <strong>${{perWeekUsd}}</strong>/тижд., разом <strong>{{perWeekUah}} грн</strong>) — <strong>{{weeks}} {{weeksWord}}</strong> циклів ATM + каса. Митні декларації не потрібні.",
+            "highlight": "Ключові докази: чеки банкомата + квитанція каси банку + договір продажу та податок в UA.",
+            "weeks_one": "тиждень",
+            "weeks_few": "тижні",
+            "weeks_many": "тижнів",
+            "cards_one": "картці",
+            "cards_few": "картках",
+            "cards_many": "картках"
+          },
+          "withdrawalsTitle": "Орієнтовні зняття по тижнях",
+          "withdrawalDesc": "чек ATM → внесення в касі",
+          "withdrawalUsdNote": "еквів.",
+          "notSmurfingTitle": "Чому це не smurfing",
+          "notSmurfingIntro": "Smurfing — навмисне дроблення внесків, щоб обійти пороги звітності, без прозорого джерела. Спосіб 2 при ліміті UA-картки виглядає схоже зовні, але інша логіка — якщо її зафіксувати документами.",
+          "notSmurfingPoints": [
+            "Джерело відоме заздалегідь: договір продажу (UA), сплачений податок, виписки — кошти вже ваші на українській картці після продажу, а не «готівка з нізвідки».",
+            "Кількість циклів диктує ліміт зняття (грн/тиждень на картку), а не бажання тримати кожен внесок «нижче порогу» банку.",
+            "На кожен тиждень — пара ATM → каса: чек зняття + квитанція внесення; суми збігаються, той самий пакет документів.",
+            "Один власник, один ланцюг: без чужих рахунків, без переказів «назад» і без зайвих дрібних операцій понад ліміт.",
+            "На початку повідомити банк (каса / compliance): продаж нерухомості в UA, орієнтовно скільки тижнів і яка сума за лімітом — краще письмово або в анкеті KYC."
+          ],
+          "notSmurfingNote": "Банк і GIIF можуть поставити питання при серії внесків — відповідь: обмеження картки + документи на кожен цикл (не smurfing з блоку «Схеми» нижче).",
+          "notesTitle": "Обмеження та ризики",
+          "notes": [
+            "Реальна вартість: комісія банкомату (PL + емітент картки UA), курс UAH→PLN гірший за НБУ — на всю суму за багато тижнів втрати можуть перевищити вигоду від відсутності поїздок через кордон (порівняйте зі способом 1 у калькуляторі).",
+            "Головне обмеження — ліміт зняття на UA-картці (тиждень/день, інколи окремий ліміт «за кордоном»); банк може тимчасово заблокувати серію великих ATM без попереднього повідомлення.",
+            "Потрібен уже відкритий рахунок у польському банку; каса може відмовити у внесенні без повного пакета або якщо сума на рахунку не збігається з поясненням походження.",
+            "Кожен цикл — зняття й внесення в короткий термін; готівку між тижнями краще не «накопичувати» вдома — ризик крадіжки й питань, чому внесення не в день ATM.",
+            "Процес триває місяцями — ризик девальвації гривні на картці та зміни правил банку; план циклів краще зафіксувати з банком на старті (див. «Чому це не smurfing»)."
+          ]
+        }
+      },
+      "inputs": {
+        "borderParamsTitle": "Параметри способу 1 (кордон)",
+        "banksLabel": "Банків для зняття гривні",
+        "banksHint": "× 100 000 грн/день (орієнт.) = {{perDay}} грн/день",
+        "maxPerTripLabel": "Максимум USD за одну поїздку",
+        "currency": "USD"
+      },
+      "verdict": {
+        "label": "Висновок для способу 1",
+        "body": "Після податків: <strong>${{net}}</strong>. Зняття гривні при {{banks}} {{banksWord}} — <strong>{{days}} {{daysWord}}</strong>. Перевезення: <strong>{{trips}} {{tripsWord}}</strong> (до <strong>${{perTrip}}</strong> готівки за поїздку), внесення в PL-банк — орієнтовно <strong>{{weeksMin}}–{{weeksMax}} тижнів</strong> разом із підготовкою.",
+        "highlight": "На кожну поїздку: 2-й примірник квитанції обмінника + митна декларація UA та PL + внесення в банк у день перетину.",
+        "banks_one": "банку",
+        "banks_few": "банках",
+        "banks_many": "банках",
+        "days_one": "робочий день",
+        "days_few": "робочі дні",
+        "days_many": "робочих днів",
+        "trips_one": "поїздка",
+        "trips_few": "поїздки",
+        "trips_many": "поїздок"
+      },
+      "stats": {
+        "days": "робочих днів зняття гривні",
+        "trips": "поїздок через кордон",
+        "perTrip": "USD за поїздку (макс. {{max}})",
+        "weeks": "тижнів загалом"
+      },
+      "schedule": {
+        "atmSummary": "{{count}} тижнів по ~${{typical}} (еквів.){{lastPart}}",
+        "atmSummaryLast": ", останній — ${{last}}",
+        "tripsSummary": "{{count}} поїздок по ${{typical}}{{lastPart}}",
+        "tripsSummaryLast": ", остання — ${{last}}",
+        "example": "наприклад: {{first}} → … → {{last}}"
+      },
+      "trips": {
+        "sectionTitle": "Поїздки через кордон",
+        "desc": "декларація UA + декларація PL · внесення в банк у день приїзду",
+        "badgeUa": "UA декл.",
+        "badgePl": "PL декл.",
+        "badgeOk": "✓ банк",
+        "trips_one": "поїздка",
+        "trips_few": "поїздки",
+        "trips_many": "поїздок"
+      },
+      "docs": {
+        "border": {
+          "sectionTitle": "Документи для способу 1 (кордон)",
+          "label": "Принести при першому внесенні",
+          "items": [
+            "Нотаріальний договір продажу квартири (UA)",
+            "Підтвердження сплати податку (UA)",
+            "Виписки про зняття готівки з банків (UA)",
+            "2-й прим. квитанцій обмінника UAH→USD (кожна поїздка)",
+            "Копії українських митних декларацій (кожна поїздка)",
+            "Копії польських митних декларацій (кожна поїздка)"
+          ]
+        },
+        "atm": {
+          "sectionTitle": "Документи для способу 2 (банкомат + каса)",
+          "label": "Принести при внесенні в касі",
+          "items": [
+            "Нотаріальний договір продажу квартири (UA)",
+            "Підтвердження сплати податку (UA)",
+            "Виписки з українського рахунку / картки (звідки кошти)",
+            "Чеки банкомата за кожне зняття в Польщі",
+            "Квитанції про внесення готівки в касі банку (кожне внесення)",
+            "Письмове пояснення банку: продаж в UA, план циклів за лімітом картки (дата, орієнтовні суми)"
+          ]
+        }
+      },
+      "schemes": {
+        "sectionTitle": "Схеми, які не працюють",
+        "items": [
+          {
+            "id": "smurfing",
+            "title": "Багато дрібних внесків (smurfing)",
+            "tag": "75% штраф · до 8 років",
+            "reasons": [
+              {
+                "label": "ПРАВО · STRUCTURING",
+                "text": "Серія дрібних внесків нижче порогів звітності без економічного сенсу трактується як podejrzenie prania pieniędzy (ustawa AML 2018, m.in. art. 74 — obowiązek zgłoszenia). Це не легальне «дроблення» коштів з продажу квартири — навіть легальне джерело не знімає AML-перевірки.",
+                "links": [
+                  {
+                    "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20180000688",
+                    "text": "Ustawa AML 2018 — текст (ISAP)"
+                  },
+                  {
+                    "url": "https://lexlege.pl/kk/art-299/",
+                    "text": "KK art. 299 — pranie pieniędzy (до 8 років)"
+                  }
+                ]
+              },
+              {
+                "label": "ПОРОГИ · БАНКИ",
+                "text": "Готівкові операції та серії внесків банк зобов’язаний аналізувати й передавати інформацію до GIIF (m.in. transakcje powyżej 15 000 EUR, podejrzane wzorce). Дрібні внески «під поріг» банк часто підсумовує в один профіль клієнта — це не анонімність.",
+                "links": [
+                  {
+                    "url": "https://www.gov.pl/web/finance/ustawa-o-przeciwdzialaniu-praniu-pieniedzy",
+                    "text": "MF — ustawa AML (огляд)"
+                  },
+                  {
+                    "url": "https://www.biznesinfo.pl/uwazaj-na-duze-wplaty-w-banku-giif-sprawdza-konta-polakow-i-szuka-nielegalnych-srodkow-ab-wds-140526",
+                    "text": "biznesinfo.pl — агрегація та червоні прапорці"
+                  }
+                ],
+                "quote": "„Rozbicie kwoty nie tylko nie uchroni przed raportem do GIIF, ale niemal gwarantuje oznaczenie operacji czerwoną flagą.”",
+                "quoteLink": "https://www.biznesinfo.pl/uwazaj-na-duze-wplaty-w-banku-giif-sprawdza-konta-polakow-i-szuka-nielegalnych-srodkow-ab-wds-140526",
+                "quoteSource": "biznesinfo.pl / AB"
+              },
+              {
+                "label": "GIIF 2024 · ЦИФРИ",
+                "text": "Звіт GIIF за 2024: 8 129 SAR (+71% до типового рівня ~4,5 тис./рік); 4 765 аналітичних проваджень (+38,4%); 641 заблокований рахунок (+39%, сума ~148,5 млн zł); 532 повідомлення до органів (KAS, поліція тощо); 50,34 млн транзакцій понад поріг + 270 200 коригувальних повідомлень.",
+                "links": [
+                  {
+                    "url": "https://www.gov.pl/web/finance/communication-no-95-on-the-publication-of-the-gifi-annual-report-for-2024",
+                    "text": "gov.pl — комунікація про звіт GIIF 2024"
+                  },
+                  {
+                    "url": "https://www.gov.pl/attachment/ba0e56a9-0316-4666-884d-c20f4e3e738b",
+                    "text": "PDF — Sprawozdanie GIIF 2024 (повний текст)"
+                  },
+                  {
+                    "url": "https://www.pwc.pl/pl/artykuly/sprawozdanie-giif-za-2024-rok.html",
+                    "text": "PwC — резюме звіту 2024"
+                  }
+                ]
+              },
+              {
+                "label": "САНКЦІЇ",
+                "text": "Адміністративно: штраф до 75% від суми операції (KKS art. 54) за порушення обов’язків AML. Кримінально: art. 299 KK (від 6 міс. до 8 років) + можливі інші статті залежно від ролі. Блокування рахунку та заморозка — без суду на етапі AML.",
+                "links": [
+                  {
+                    "url": "https://arslege.pl/kodeks-karny-skarbowy/k12/a3286",
+                    "text": "KKS art. 54 — 75% kary pieniężnej"
+                  },
+                  {
+                    "url": "https://www.gov.pl/web/finance/publications-aml-ctf",
+                    "text": "MF — публікації AML/CFT"
+                  }
+                ]
+              },
+              {
+                "label": "ВІДКЛАДЕНИЙ РИЗИК",
+                "text": "NIK (2024): GIIF відкриває аналітичні провадження в середньому через ~360 днів після події; дані зберігаються 5 років. Тобто «пройшло півроку» — не означає «забули».",
+                "links": [
+                  {
+                    "url": "https://www.nik.gov.pl/aktualnosci/przeciwdzialanie-praniu-pieniedzy-i-finansowaniu-terroryzmu.html",
+                    "text": "NIK — аудит AML 2024"
+                  },
+                  {
+                    "url": "https://www.gov.pl/web/finance/komunikaty-giif",
+                    "text": "gov.pl — komunikaty GIIF"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "loan",
+            "title": "Позика (pożyczka)",
+            "tag": "0,5% PCC · до 5 років",
+            "reasons": [
+              {
+                "label": "PCC · КОЛИ ВИНИКАЄ ПОДАТОК",
+                "text": "Pożyczka jako czynność cywilnoprawna — PCC 0,5% (tytuł V ustawy o PCC), płaci biorący. Podatek powstaje m.in. gdy umowa zawarta w PL albo gdy przedmiot pożyczki (pieniądze) jest w Polsce. «Umowa za granicą» bez PCC tylko gdy oba warunki: umowa poza PL i środki poza PL w chwili zawarcia — inaczej 0,5% od całości.",
+                "links": [
+                  {
+                    "url": "https://poradnikprzedsiebiorcy.pl/-pozyczka-otrzymana-z-zagranicy-czy-podlega-opodatkowaniu-w-polsce",
+                    "text": "poradnikprzedsiebiorcy.pl — pożyczka z zagranicy"
+                  },
+                  {
+                    "url": "https://ksiegowosc.infor.pl/podatki/pcc/2759488,Kiedy-zaplacimy-podatek-PCC-od-pozyczek-udzielonych-przez-podmiot-zagraniczny.html",
+                    "text": "Infor.pl — PCC od pożyczki zagranicznej"
+                  },
+                  {
+                    "url": "http://www.podatekpcc.pl/artykul,13861,pcc-od-zagranicznej-umowy-pozyczki-interpretacja-indywidualna.html",
+                    "text": "podatekpcc.pl — interpretacja indywidualna"
+                  }
+                ]
+              },
+              {
+                "label": "ФІКТИВНА ПОЗИКА · KK",
+                "text": "Позика без реального повернення, підроблений договір або «позикодавець-фіктив» — ст. 271 KK (fałszerstwo dokumentu, до 5 років) і можлива ст. 299 (pranie). Банк при внесенні готівки все одно вимагає пояснити походження: хто дав позику, звідки у нього гроші, чому готівка, чому не безпосередній переказ з продажу нерухомості.",
+                "links": [
+                  {
+                    "url": "https://lexlege.pl/kk/art-271/",
+                    "text": "KK art. 271 — fałszerstwo dokumentu"
+                  },
+                  {
+                    "url": "https://www.pit.pl/aktualnosci/umowa-pozyczki-bez-pcc-jesli-pieniadze-sa-za-granica-916951",
+                    "text": "pit.pl — PCC a miejsce środków"
+                  }
+                ]
+              },
+              {
+                "label": "AML · БАНК",
+                "text": "Instytucja obowiązana musi ustalić beneficjenta rzeczywistego i źródło pochodzenia środków (ustawa AML). Pożyczka od znajomego bez śladu w bankowości (wypłaty, przelewy, deklaracje) często kończy się odmową przyjęcia wpłaty lub SAR do GIIF — tak samo jak przy «prostej» gotówce.",
+                "links": [
+                  {
+                    "url": "https://www.gov.pl/web/finance/ustawa-o-przeciwdzialaniu-praniu-pieniedzy",
+                    "text": "MF — obowiązki instytucji AML"
+                  },
+                  {
+                    "url": "https://www.podatki.egospodarka.pl/99138,Podatek-PCC-gdy-umowa-pozyczki-zawarta-za-granica,1,69,1.html",
+                    "text": "eGospodarka.pl — umowa za granicą a PCC"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "no-declaration",
+            "title": "Не декларувати на кордоні",
+            "tag": "конфіскація · 50% · 5 років",
+            "reasons": [
+              {
+                "label": "ПОРІГ · ЄС",
+                "text": "При перетині зовнішнього кордону ЄС готівку від еквівалента 10 000 EUR (усі валюти разом, дорожні чеки, золото тощо) потрібно задекларувати письмово в KAS. В Польщі також електронна декларація через PUESC до перетину. Не «10 тис. на людину» — сума на одну особу в одному перетині.",
+                "links": [
+                  {
+                    "url": "https://granica.gov.pl/j/index.php/812",
+                    "text": "granica.gov.pl — przewóz środków pieniężnych"
+                  },
+                  {
+                    "url": "https://eur-lex.europa.eu/legal-content/PL/TXT/?uri=CELEX:32018R1672",
+                    "text": "EUR-Lex — rozporządzenie UE 2018/1672"
+                  },
+                  {
+                    "url": "https://www.infor.pl/prawo/nowosci-prawne/limity-przewozu-gotowki-przez-granice",
+                    "text": "Infor.pl — ліміти та декларація готівки"
+                  }
+                ]
+              },
+              {
+                "label": "САНКЦІЇ · PL",
+                "text": "KKS art. 106d: niezgodne z prawdą zgłoszenie lub brak zgłoszenia — grzywna do 720 stawek dziennych; przy większych kwotach — odpowiedzialność karna, konfiskata środków. Art. 106f/106h — dodatkowe wykroczenia przy wwozie/wywozie. Практика KAS: конфіскація + штраф до 50% від суми незаявленої готівки.",
+                "links": [
+                  {
+                    "url": "https://arslege.pl/kodeks-karny-skarbowy/k12/a3288",
+                    "text": "KKS art. 106f — brak zgłoszenia"
+                  },
+                  {
+                    "url": "https://arslege.pl/kodeks-karny-skarbowy/k12/a3290",
+                    "text": "KKS art. 106d — fałszywe zgłoszenie"
+                  },
+                  {
+                    "url": "https://www.gov.pl/web/kas/przewoz-srodkow-pienieznych",
+                    "text": "gov.pl / KAS — офіційна інформація"
+                  }
+                ]
+              },
+              {
+                "label": "САНКЦІЇ · UA",
+                "text": "При вивезенні з України без декларування (понад встановлені ліміти) — конфіскація, штраф до 20% (податковий кодекс UA), кримінальна відповідальність за контрабанду валютних цінностей. Подвійний кордон UA→PL = два контролі.",
+                "links": [
+                  {
+                    "url": "https://bank.gov.ua/ua/markets/liberalization/export-cash-abroad",
+                    "text": "НБУ — вивезення готівки за кордон"
+                  },
+                  {
+                    "url": "https://news.dtkt.ua/state/zed/98331-vivezennia-valiutnix-cinnostei-za-mezi-ukrayini-roziasnennia-vid-dms",
+                    "text": "dtkt.ua — роз’яснення ДМС (10 000 €)"
+                  }
+                ]
+              },
+              {
+                "label": "СПРАВА · INFOR 2024",
+                "text": "KAS: громадянка України в’їхала з готівкою ~17 млн zł, у декларації вказала лише 20 тys. euro — справа про незаконний ввіз і ухилення від zgłoszenia.",
+                "isCase": true,
+                "links": [
+                  {
+                    "url": "https://www.infor.pl/prawo/nowosci-prawne/6713477,kas-ukrainka-wjezdzala-do-polski-z-gotowka-o-rownowartosci-ponad-17-mln-zl-zglosila-tylko-20-tys-euro.html",
+                    "text": "infor.pl — sprawa KAS 17 mln zł"
+                  }
+                ]
+              },
+              {
+                "label": "СПРАВА · МЕДИКА 2024",
+                "text": "Підкарпатський відділ KAS (2024): 130+ випадків незаконного переміщення готівки, вилучено понад 2,6 млн EUR. Типовий сценарій — недекларування або заниження при перетині з UA.",
+                "isCase": true,
+                "links": [
+                  {
+                    "url": "https://www.gov.pl/web/kas/wykroczenia-przy-przewozie-srodkow-pienieznych",
+                    "text": "gov.pl / KAS — wykroczenia 2024"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "crypto",
+            "title": "Криптовалюта як проміжний крок",
+            "tag": "до 8 років",
+            "reasons": [
+              {
+                "label": "ПРОЗОРІСТЬ · GIIF",
+                "text": "Ланцюг on-chain аналізується (Chainalysis, Reactor тощо) — GIIF і банки отримують звіти про ризикові гаманці. «Купив USDT — продав за PLN» не прибирає питання про джерело: при виведенні у фіат банк вимагає той самий пакет, що при готівці (договір, податки, виписки).",
+                "links": [
+                  {
+                    "url": "https://www.gov.pl/web/finance/wykorzystanie-technologii-blockchain-w-systemie-aml",
+                    "text": "gov.pl — blockchain у системі AML/GIIF"
+                  },
+                  {
+                    "url": "https://www.gov.pl/web/finance/komunikaty-giif",
+                    "text": "gov.pl — GIIF та криптоактиви"
+                  }
+                ]
+              },
+              {
+                "label": "KYC · BITOMATY · VASP",
+                "text": "З 2024–2025 польські VASP і біткомати під посиленим наглядом: ідентифікація клієнта, limity, raportowanie do GIIF (MiCA / ustawa AML). Обмін «без питань» на великі суми — практично закінчився.",
+                "links": [
+                  {
+                    "url": "https://eur-lex.europa.eu/legal-content/PL/TXT/?uri=CELEX:32023R1114",
+                    "text": "EUR-Lex — rozporządzenie MiCA (UE)"
+                  },
+                  {
+                    "url": "https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica",
+                    "text": "ESMA — MiCA overview"
+                  },
+                  {
+                    "url": "https://www.knf.gov.pl/knf/pl/komponenty/img/KNF_Publikacje/2024/20241218_Krypto_AML_8834.pdf",
+                    "text": "KNF — крипто та AML (PDF)"
+                  }
+                ]
+              },
+              {
+                "label": "КРИМІНАЛ · KK",
+                "text": "Pranie pieniędzy (art. 299 KK) — від 6 міс. до 8 років; при організованій групі — вищі ставки. Kryptowaluty в польських справах 2024–2025 часто поєднуються з handlem ludźmi та transferami mule.",
+                "links": [
+                  {
+                    "url": "https://lexlege.pl/kk/art-299/",
+                    "text": "KK art. 299 — tekst"
+                  },
+                  {
+                    "url": "https://gazeta.policja.pl/997/archiwum-1/2024/numer-45-092024-r/251365,Kryptowaluty-podazaj-za-pieniedzmi.html",
+                    "text": "Gazeta Policyjna — krypto i GIIF"
+                  }
+                ]
+              },
+              {
+                "label": "СПРАВА · CBŚP 2025",
+                "text": "CBŚP (2025): 10 громадян України затримано у Варшаві, Лодзі, Вроцлаві; ~30 підозрюваних у справі про pranie через kryptowaluty (зв’язок з handlem ludźmi); 12 осіб засуджено на попередніх етапах.",
+                "isCase": true,
+                "links": [
+                  {
+                    "url": "https://www.bankier.pl/wiadomosc/Handel-ludzmi-i-pranie-pieniedzy-przez-kryptowaluty-10-Ukraincow-zatrzymanych-przez-CBSP-9124772.html",
+                    "text": "bankier.pl — 10 Ukrainców"
+                  },
+                  {
+                    "url": "https://www.policja.pl/pol/aktualnosci/273825,Koniec-dzialalnosci-kantorow-kryptowalutowych-rozbicie-zorganizowanej-grupy-prze.html",
+                    "text": "Policja.pl — kantory krypto, pranie pieniędzy"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "mule",
+            "title": "Чужий рахунок (мул)",
+            "tag": "6 міс.–8 років",
+            "reasons": [
+              {
+                "label": "МЕХАНІКА · ПАТЕРН",
+                "text": "Money mule: внесення готівки / прийом przelewu на свій rachunek → швидкий переказ далі (часто за кордон або в krypto). Банк бачить «внесення без доходу» + «відразу вихід». Навіть без злого наміру — ризик ст. 299 KK (ułatwianie prania).",
+                "links": [
+                  {
+                    "url": "https://lexlege.pl/kk/art-299/",
+                    "text": "KK art. 299 — pranie pieniędzy"
+                  },
+                  {
+                    "url": "https://www.europol.europa.eu/publication-events/main-reports/internet-organised-crime-threat-assessment-iocta-2024",
+                    "text": "Europol IOCTA 2024 — money mules"
+                  }
+                ]
+              },
+              {
+                "label": "ВІДПОВІДАЛЬНІСТЬ",
+                "text": "Art. 299 §1 KK: 6 місяців – 8 років (§4 до 10 років при особливих обставинах). «Мені платили 500 zł» не звільняє — суд оцінює, чи могли не знати про злочинне джерело. Чужий рахунок для «легалізації» продажу квартири = ви стаєте ланкою без захисту договором.",
+                "links": [
+                  {
+                    "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970553391",
+                    "text": "Kodeks karny — ISAP"
+                  },
+                  {
+                    "url": "https://www.knf.gov.pl/knf/pl/komponenty/img/KNF_Ostrzezenia/2023/ostrzezenie_money_mule_2023.pdf",
+                    "text": "KNF — ostrzeżenie money mule (PDF)"
+                  }
+                ]
+              },
+              {
+                "label": "ОПЕРАЦІЯ · ПОЛЬЩА 2023",
+                "text": "Policja / CBŚP (2023): у масштабній операції проти money mules виявлено 10 759 осіб у схемах; 1 013 затримань; значна частина — іноземці, зокрема Україці в Польщі (рекрутинг через Telegram/OLX).",
+                "isCase": true,
+                "links": [
+                  {
+                    "url": "https://cyberdefence24.pl/armia-i-sluzby/ukraincy-mulami-finansowymi-fala-zatrzyman",
+                    "text": "cyberdefence24.pl — Ukraincy, mule"
+                  },
+                  {
+                    "url": "https://www.policja.pl/pol/aktualnosci",
+                    "text": "Policja.pl — aktualności (operacje AML)"
+                  }
+                ]
+              },
+              {
+                "label": "БАНК · GIIF",
+                "text": "Алгоритми банків маркують: wpłata gotówki → szybki przelew SWIFT/SEPA → konto zamykane. GIIF отримує SAR; рахунок блокується до пояснення. Для легалізації коштів від продажу нерухомості мул не потрібен — потрібен власний rachunek і документи.",
+                "links": [
+                  {
+                    "url": "https://www.pwc.pl/pl/artykuly/sprawozdanie-giif-za-2024-rok.html",
+                    "text": "PwC — GIIF 2024 (SAR, blokady)"
+                  },
+                  {
+                    "url": "https://www.ebf.eu/anti-money-laundering/dontbeamule-2019/",
+                    "text": "EBF #DontBeAMule — money mules"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "fake-contracts",
+            "title": "Фіктивні договори",
+            "tag": "до 12 років",
+            "reasons": [
+              {
+                "label": "НОТАРІУСИ · AML",
+                "text": "З 2022 нотаріуси в Польщі — instytucje obowiązane AML (ustawa + rozporządzenie MS). Фіктивний akt, занижена ціна, «заднім числом» — ризик відмови в посвідченні та zgłoszenie do GIIF. Дані з реєстрів звіряються з KAS і банками.",
+                "links": [
+                  {
+                    "url": "https://www.gov.pl/web/finance/ustawa-o-przeciwdzialaniu-praniu-pieniedzy",
+                    "text": "MF — ustawa AML"
+                  },
+                  {
+                    "url": "https://www.gov.pl/web/finanse/komunikat-nr-58-w-sprawie-raportowania-informacji-o-czynnosciach-notarialnych-przekazywanych-do-giif-i-szefa-kas",
+                    "text": "gov.pl — notariusze та звітність до GIIF"
+                  }
+                ]
+              },
+              {
+                "label": "КК · СТАТТІ",
+                "text": "Fałszerstwo dokumentu (art. 271 KK — до 5 років) + pranie pieniędzy (art. 299 — до 8 років) при сумісності можуть кумулюватися; у важких випадках (zorganizowana grupa) — вищі межі. KAS: порівняння задекларованих доходів з фіктивними umowami.",
+                "links": [
+                  {
+                    "url": "https://lexlege.pl/kk/art-271/",
+                    "text": "KK art. 271"
+                  },
+                  {
+                    "url": "https://lexlege.pl/kk/art-299/",
+                    "text": "KK art. 299"
+                  },
+                  {
+                    "url": "https://www.gov.pl/web/kas/kontrole-podatkowe",
+                    "text": "gov.pl / KAS — kontrole"
+                  }
+                ]
+              },
+              {
+                "label": "СПРАВА · ПЕРЕМИШЛЬ 2025",
+                "text": "SG (Прикордонна служба), грудень 2025: 8 громадян України засуджені; ~2,5 млн zł + 316 000 EUR «відмито» через 27 рахунків у 8 банках; період схеми 2020–2023; фіктивні umowy та перекази.",
+                "isCase": true,
+                "links": [
+                  {
+                    "url": "https://www.strazgraniczna.pl/pl/aktualnosci/15182,Wyprali-brudne-pieniadze-ponad-25-mln-zl-i-316-tys-euro.html",
+                    "text": "strazgraniczna.pl — Wyprali brudne pieniądze"
+                  }
+                ]
+              },
+              {
+                "label": "ПРАКТИКА · БАНК",
+                "text": "Банк у Польщі приймає договір продажу нерухомості з UA лише якщо: нотаріальна форма, податок, виписки, логічний ланцюг (рахунок UA → зняття/переказ → PL). «Договір на 50 000, а внесли 200 000» або договір без реєстрації — відмова або SAR.",
+                "links": [
+                  {
+                    "url": "https://www.knf.gov.pl/knf/pl/komponenty/img/KNF_Ostrzezenia/2022/ostrzezenie_aml_2022.pdf",
+                    "text": "KNF — AML dla banków (PDF)"
+                  },
+                  {
+                    "url": "https://www.biznesinfo.pl/uwazaj-na-duze-wplaty-w-banku-giif-sprawdza-konta-polakow-i-szuka-nielegalnych-srodkow-ab-wds-140526",
+                    "text": "biznesinfo.pl — великі внески"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Default Ukrainian HTML fallback; React updates title/description per locale (usePageMeta). -->
+    <meta
+      name="description"
+      content="Практичні гайди: легалізація в Польщі коштів з продажу нерухомості в Україні та інші теми."
+    />
+    <title>Гайди від Дімасіка</title>
+    <meta
+      property="og:image"
+      content="https://dpugovkin.github.io/guides/og-cover.svg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      ;(function () {
+        var path = location.pathname.replace(/\/$/, '') || '/'
+        if (path !== '/guides') return
+        var lang = 'uk'
+        try {
+          var stored = localStorage.getItem('guides.language')
+          if (stored === 'en' || stored === 'uk' || stored === 'pl')
+            lang = stored
+        } catch (_) {}
+        location.replace('/guides/' + lang + location.search + location.hash)
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

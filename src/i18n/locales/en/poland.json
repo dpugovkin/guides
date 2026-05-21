@@ -1,0 +1,564 @@
+{
+  "guides": {
+    "poland": {
+      "title": "Legalizing in Poland funds from Ukrainian property sales",
+      "description": "Property sale in UA → legal funds in a Polish bank. Two methods, tax and document calculator.",
+      "metaTitle": "Legalizing in Poland funds from Ukrainian property sales",
+      "subtitle": "Legalization in PL: amount after UA taxes, two transfer methods, bank document package",
+      "netSection": {
+        "title": "After taxes in Ukraine",
+        "inputLabel": "Net amount (USD)",
+        "hint": "Enter the amount after taxes in Ukraine — legalization methods in Poland below are calculated from it. Not linked to the calculator in the next block."
+      },
+      "taxCalcAccordion": {
+        "title": "Tax calculator for selling in Ukraine",
+        "subtitle": "Separate — does not change the amount above",
+        "independentNote": "Fields here are independent of “After taxes in Ukraine”. They only calculate sale costs in UA; you can manually copy the result into the field above.",
+        "guideLink": "Standalone guide with full calculator"
+      },
+      "methods": {
+        "sectionTitle": "Choose a legal method",
+        "border": {
+          "title": "Method 1: via the border",
+          "short": "UA cash → exchange → declarations",
+          "intro": "Withdraw hryvnia in Ukraine, exchange to USD, carry across the border with UA and PL customs declarations, deposit at the bank on arrival day."
+        },
+        "atm": {
+          "title": "Method 2: ATM + branch counter",
+          "short": "UA card → ATM in PL → deposit",
+          "intro": "Funds stay on a Ukrainian card (hryvnia account). Withdraw at a Polish ATM, keep the receipt, then deposit cash at your bank’s counter with the same property-sale document package — without carrying currency across the border.",
+          "paramsTitle": "Method 2 parameters (ATM + counter)",
+          "stepsTitle": "Step by step",
+          "steps": [
+            "Prepare the source-of-funds package: sale contract (UA), tax payment proof, statements from UA accounts.",
+            "Withdraw cash at a Polish bank ATM with a Ukrainian card — keep the receipt (date, amount, ATM).",
+            "On the withdrawal day or soon after, deposit cash at your Polish bank’s counter, presenting documents and ATM receipts.",
+            "UA card limits require several weekly cycles — this is not “structuring”. Do not withdraw below the limit “to stay under the radar” or add extra operations; each cycle needs an ATM receipt, counter deposit, and the same document package."
+          ],
+          "cardsLabel": "Number of cards (UA)",
+          "cardsHint": "{{cards}} × {{weeklyUah}} UAH/week ≈ ${{perWeekUsd}}/week.",
+          "weeklyLimitLabel": "Weekly withdrawal limit (UAH per card)",
+          "weeklyLimitHint": "Limit in hryvnia on the card account; at a Polish ATM you receive PLN at the network rate.",
+          "stats": {
+            "weeks": "weeks of withdrawals",
+            "perWeekUah": "UAH per week (all cards)",
+            "perWeekUsd": "≈ USD per week (rate {{rate}})"
+          },
+          "verdict": {
+            "label": "Summary for method 2",
+            "body": "After taxes you need <strong>${{net}}</strong>. With {{cards}} {{cardsWord}} and <strong>{{weeklyUah}} UAH</strong>/week per card (≈ <strong>${{perWeekUsd}}</strong>/week, total <strong>{{perWeekUah}} UAH</strong>) — <strong>{{weeks}} {{weeksWord}}</strong> of ATM + counter cycles. No customs declarations required.",
+            "highlight": "Key evidence: ATM receipts + bank counter deposit slip + UA sale contract and tax proof.",
+            "weeks_one": "week",
+            "weeks_other": "weeks",
+            "cards_one": "card",
+            "cards_other": "cards"
+          },
+          "withdrawalsTitle": "Estimated withdrawals by week",
+          "withdrawalDesc": "ATM receipt → counter deposit",
+          "withdrawalUsdNote": "equiv.",
+          "notSmurfingTitle": "Why this is not smurfing",
+          "notSmurfingIntro": "Smurfing means splitting deposits on purpose to evade reporting thresholds without a transparent source. Method 2 can look similar externally because of the UA card limit — but the logic is different if you document it.",
+          "notSmurfingPoints": [
+            "Source is known upfront: UA sale contract, tax paid, statements — funds are already yours on a Ukrainian card after the sale, not “cash from nowhere”.",
+            "Number of cycles is dictated by the withdrawal limit (UAH/week per card), not by keeping each deposit “below the bank threshold”.",
+            "Each week — ATM → counter pair: withdrawal receipt + deposit receipt; amounts match, same document package.",
+            "One owner, one chain: no third-party accounts, no “round-trip” transfers, no extra small operations beyond the limit.",
+            "Notify the bank early (counter / compliance): property sale in UA, approximate weeks and amount per limit — preferably in writing or on the KYC form."
+          ],
+          "notSmurfingNote": "Bank and GIIF may ask questions about a series of deposits — answer: card limit + documents for each cycle (not smurfing from the “Schemes” section below).",
+          "notesTitle": "Limits and risks",
+          "notes": [
+            "Real cost: ATM fees (PL + UA card issuer), UAH→PLN rate worse than NBU — over many weeks losses can exceed savings from skipping border trips (compare with method 1 in the calculator).",
+            "Main limit — UA card withdrawal cap (week/day, sometimes a separate “abroad” limit); the bank may temporarily block a series of large ATM withdrawals without prior notice.",
+            "You need an already opened account at a Polish bank; the counter may refuse deposit without a full package or if the account balance does not match the explained source.",
+            "Each cycle — withdrawal and deposit in a short window; avoid “stockpiling” cash between weeks — theft risk and questions why deposit was not on the ATM day.",
+            "Process takes months — hryvnia devaluation on the card and changing bank rules; plan cycles with the bank at the start (see “Why this is not smurfing”)."
+          ]
+        }
+      },
+      "inputs": {
+        "borderParamsTitle": "Method 1 parameters (border)",
+        "banksLabel": "Banks for hryvnia withdrawal",
+        "banksHint": "× 100,000 UAH/day (approx.) = {{perDay}} UAH/day",
+        "maxPerTripLabel": "Maximum USD per trip",
+        "currency": "USD"
+      },
+      "verdict": {
+        "label": "Summary for method 1",
+        "body": "After taxes: <strong>${{net}}</strong>. Hryvnia withdrawal at {{banks}} {{banksWord}} — <strong>{{days}} {{daysWord}}</strong>. Transport: <strong>{{trips}} {{tripsWord}}</strong> (up to <strong>${{perTrip}}</strong> cash per trip), PL bank deposit — roughly <strong>{{weeksMin}}–{{weeksMax}} weeks</strong> including preparation.",
+        "highlight": "Per trip: 2nd copy of exchange receipt + UA and PL customs declarations + bank deposit on crossing day.",
+        "banks_one": "bank",
+        "banks_other": "banks",
+        "days_one": "working day",
+        "days_other": "working days",
+        "trips_one": "trip",
+        "trips_other": "trips"
+      },
+      "stats": {
+        "days": "working days of hryvnia withdrawal",
+        "trips": "border trips",
+        "perTrip": "USD per trip (max {{max}})",
+        "weeks": "weeks total"
+      },
+      "schedule": {
+        "atmSummary": "{{count}} weeks at ~${{typical}} (equiv.){{lastPart}}",
+        "atmSummaryLast": ", last — ${{last}}",
+        "tripsSummary": "{{count}} trips at ${{typical}}{{lastPart}}",
+        "tripsSummaryLast": ", last — ${{last}}",
+        "example": "e.g.: {{first}} → … → {{last}}"
+      },
+      "trips": {
+        "sectionTitle": "Border trips",
+        "desc": "UA declaration + PL declaration · bank deposit on arrival day",
+        "badgeUa": "UA decl.",
+        "badgePl": "PL decl.",
+        "badgeOk": "✓ bank",
+        "trips_one": "trip",
+        "trips_other": "trips"
+      },
+      "docs": {
+        "border": {
+          "sectionTitle": "Documents for method 1 (border)",
+          "label": "Bring on first deposit",
+          "items": [
+            "Notarized apartment sale contract (UA)",
+            "Proof of tax payment (UA)",
+            "Bank withdrawal statements (UA)",
+            "2nd copy of UAH→USD exchange receipts (each trip)",
+            "Copies of Ukrainian customs declarations (each trip)",
+            "Copies of Polish customs declarations (each trip)"
+          ]
+        },
+        "atm": {
+          "sectionTitle": "Documents for method 2 (ATM + counter)",
+          "label": "Bring when depositing at the counter",
+          "items": [
+            "Notarized apartment sale contract (UA)",
+            "Proof of tax payment (UA)",
+            "Statements from Ukrainian account / card (source of funds)",
+            "ATM receipts for each withdrawal in Poland",
+            "Bank counter cash deposit receipts (each deposit)",
+            "Written explanation to the bank: sale in UA, planned cycles per card limit (date, approximate amounts)"
+          ]
+        }
+      },
+      "schemes": {
+        "sectionTitle": "Schemes that do not work",
+        "items": [
+          {
+            "id": "smurfing",
+            "title": "Many small deposits (smurfing)",
+            "tag": "75% fine · up to 8 years",
+            "reasons": [
+              {
+                "label": "LAW · STRUCTURING",
+                "text": "A series of small deposits below reporting thresholds without economic rationale is treated as podejrzenie prania pieniędzy (AML Act 2018, incl. art. 74 — reporting duty). This is not legal “splitting” of apartment sale proceeds — even a lawful source does not remove AML checks.",
+                "links": [
+                  {
+                    "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20180000688",
+                    "text": "AML Act 2018 — full text (ISAP)"
+                  },
+                  {
+                    "url": "https://lexlege.pl/kk/art-299/",
+                    "text": "Criminal Code art. 299 — money laundering (up to 8 years)"
+                  }
+                ]
+              },
+              {
+                "label": "THRESHOLDS · BANKS",
+                "text": "Banks must analyze cash operations and deposit series and pass information to GIIF (incl. transactions above EUR 15,000, suspicious patterns). Small deposits “under the threshold” are often aggregated in one client profile — not anonymity.",
+                "links": [
+                  {
+                    "url": "https://www.gov.pl/web/finance/ustawa-o-przeciwdzialaniu-praniu-pieniedzy",
+                    "text": "Ministry of Finance — AML Act (overview)"
+                  },
+                  {
+                    "url": "https://www.biznesinfo.pl/uwazaj-na-duze-wplaty-w-banku-giif-sprawdza-konta-polakow-i-szuka-nielegalnych-srodkow-ab-wds-140526",
+                    "text": "biznesinfo.pl — aggregation and red flags"
+                  }
+                ],
+                "quote": "„Rozbicie kwoty nie tylko nie uchroni przed raportem do GIIF, ale niemal gwarantuje oznaczenie operacji czerwoną flagą.”",
+                "quoteLink": "https://www.biznesinfo.pl/uwazaj-na-duze-wplaty-w-banku-giif-sprawdza-konta-polakow-i-szuka-nielegalnych-srodkow-ab-wds-140526",
+                "quoteSource": "biznesinfo.pl / AB"
+              },
+              {
+                "label": "GIIF 2024 · FIGURES",
+                "text": "GIIF 2024 report: 8,129 SAR (+71% vs typical ~4.5k/year); 4,765 analytical cases (+38.4%); 641 blocked accounts (+39%, ~PLN 148.5M); 532 reports to authorities (KAS, police, etc.); 50.34M threshold transactions + 270,200 corrective notices.",
+                "links": [
+                  {
+                    "url": "https://www.gov.pl/web/finance/communication-no-95-on-the-publication-of-the-gifi-annual-report-for-2024",
+                    "text": "gov.pl — GIIF 2024 annual report notice"
+                  },
+                  {
+                    "url": "https://www.gov.pl/attachment/ba0e56a9-0316-4666-884d-c20f4e3e738b",
+                    "text": "PDF — GIIF 2024 report (full text)"
+                  },
+                  {
+                    "url": "https://www.pwc.pl/pl/artykuly/sprawozdanie-giif-za-2024-rok.html",
+                    "text": "PwC — 2024 report summary"
+                  }
+                ]
+              },
+              {
+                "label": "SANCTIONS",
+                "text": "Administrative: fine up to 75% of the transaction amount (Fiscal Penal Code art. 54) for AML duty breaches. Criminal: Criminal Code art. 299 (6 months to 8 years) + other articles depending on role. Account blocking and freezing — without court at the AML stage.",
+                "links": [
+                  {
+                    "url": "https://arslege.pl/kodeks-karny-skarbowy/k12/a3286",
+                    "text": "Fiscal Penal Code art. 54 — 75% monetary penalty"
+                  },
+                  {
+                    "url": "https://www.gov.pl/web/finance/publications-aml-ctf",
+                    "text": "Ministry of Finance — AML/CFT publications"
+                  }
+                ]
+              },
+              {
+                "label": "DELAYED RISK",
+                "text": "NIK (2024): GIIF opens analytical cases on average ~360 days after the event; data kept 5 years. So “half a year passed” does not mean “forgotten”.",
+                "links": [
+                  {
+                    "url": "https://www.nik.gov.pl/aktualnosci/przeciwdzialanie-praniu-pieniedzy-i-finansowaniu-terroryzmu.html",
+                    "text": "NIK — AML audit 2024"
+                  },
+                  {
+                    "url": "https://www.gov.pl/web/finance/komunikaty-giif",
+                    "text": "gov.pl — GIIF announcements"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "loan",
+            "title": "Loan (pożyczka)",
+            "tag": "0.5% PCC · up to 5 years",
+            "reasons": [
+              {
+                "label": "PCC · WHEN TAX ARISES",
+                "text": "Pożyczka as a civil-law act — PCC 0.5% (Title V of the PCC Act), paid by the borrower. Tax arises when the contract is concluded in PL or when the loan object (money) is in Poland. “Contract abroad” without PCC only if both: contract outside PL and funds outside PL at signing — otherwise 0.5% on the full amount.",
+                "links": [
+                  {
+                    "url": "https://poradnikprzedsiebiorcy.pl/-pozyczka-otrzymana-z-zagranicy-czy-podlega-opodatkowaniu-w-polsce",
+                    "text": "poradnikprzedsiebiorcy.pl — loan from abroad"
+                  },
+                  {
+                    "url": "https://ksiegowosc.infor.pl/podatki/pcc/2759488,Kiedy-zaplacimy-podatek-PCC-od-pozyczek-udzielonych-przez-podmiot-zagraniczny.html",
+                    "text": "Infor.pl — PCC on foreign loan"
+                  },
+                  {
+                    "url": "http://www.podatekpcc.pl/artykul,13861,pcc-od-zagranicznej-umowy-pozyczki-interpretacja-indywidualna.html",
+                    "text": "podatekpcc.pl — individual tax interpretation"
+                  }
+                ]
+              },
+              {
+                "label": "SHAM LOAN · CRIMINAL CODE",
+                "text": "A loan without real repayment, forged contract, or a fake lender — Criminal Code art. 271 (document forgery, up to 5 years) and possible art. 299 (money laundering). The bank still requires source explanation on cash deposit: who lent, where their money came from, why cash, why not a direct transfer from the property sale.",
+                "links": [
+                  {
+                    "url": "https://lexlege.pl/kk/art-271/",
+                    "text": "Criminal Code art. 271 — document forgery"
+                  },
+                  {
+                    "url": "https://www.pit.pl/aktualnosci/umowa-pozyczki-bez-pcc-jesli-pieniadze-sa-za-granica-916951",
+                    "text": "pit.pl — PCC and location of funds"
+                  }
+                ]
+              },
+              {
+                "label": "AML · BANK",
+                "text": "Obligated institutions must identify the beneficial owner and source of funds (AML Act). A loan from an acquaintance without banking trail (withdrawals, transfers, declarations) often ends in refusal to accept the deposit or a SAR to GIIF — same as with “simple” cash.",
+                "links": [
+                  {
+                    "url": "https://www.gov.pl/web/finance/ustawa-o-przeciwdzialaniu-praniu-pieniedzy",
+                    "text": "Ministry of Finance — AML institution duties"
+                  },
+                  {
+                    "url": "https://www.podatki.egospodarka.pl/99138,Podatek-PCC-gdy-umowa-pozyczki-zawarta-za-granica,1,69,1.html",
+                    "text": "eGospodarka.pl — contract abroad and PCC"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "no-declaration",
+            "title": "Not declaring at the border",
+            "tag": "confiscation · 50% · 5 years",
+            "reasons": [
+              {
+                "label": "THRESHOLD · EU",
+                "text": "When crossing the EU external border, cash from the equivalent of EUR 10,000 (all currencies together, traveller’s cheques, gold, etc.) must be declared in writing to KAS. In Poland also electronic declaration via PUESC before crossing. Not “10k per person” — total per person in one crossing.",
+                "links": [
+                  {
+                    "url": "https://granica.gov.pl/j/index.php/812",
+                    "text": "granica.gov.pl — carrying monetary instruments"
+                  },
+                  {
+                    "url": "https://eur-lex.europa.eu/legal-content/PL/TXT/?uri=CELEX:32018R1672",
+                    "text": "EUR-Lex — EU Regulation 2018/1672"
+                  },
+                  {
+                    "url": "https://www.infor.pl/prawo/nowosci-prawne/limity-przewozu-gotowki-przez-granice",
+                    "text": "Infor.pl — cash limits and declaration"
+                  }
+                ]
+              },
+              {
+                "label": "SANCTIONS · PL",
+                "text": "Fiscal Penal Code art. 106d: false declaration or failure to declare — fine up to 720 daily rates; for larger amounts — criminal liability, confiscation of funds. Art. 106f/106h — additional offences on import/export. KAS practice: confiscation + fine up to 50% of undeclared cash.",
+                "links": [
+                  {
+                    "url": "https://arslege.pl/kodeks-karny-skarbowy/k12/a3288",
+                    "text": "Fiscal Penal Code art. 106f — failure to declare"
+                  },
+                  {
+                    "url": "https://arslege.pl/kodeks-karny-skarbowy/k12/a3290",
+                    "text": "Fiscal Penal Code art. 106d — false declaration"
+                  },
+                  {
+                    "url": "https://www.gov.pl/web/kas/przewoz-srodkow-pienieznych",
+                    "text": "gov.pl / KAS — official information"
+                  }
+                ]
+              },
+              {
+                "label": "SANCTIONS · UA",
+                "text": "Export from Ukraine without declaration (above set limits) — confiscation, fine up to 20% (UA tax code), criminal liability for currency smuggling. Double border UA→PL = two controls.",
+                "links": [
+                  {
+                    "url": "https://bank.gov.ua/ua/markets/liberalization/export-cash-abroad",
+                    "text": "NBU — exporting cash abroad"
+                  },
+                  {
+                    "url": "https://news.dtkt.ua/state/zed/98331-vivezennia-valiutnix-cinnostei-za-mezi-ukrayini-roziasnennia-vid-dms",
+                    "text": "dtkt.ua — State Customs Service clarification (EUR 10,000)"
+                  }
+                ]
+              },
+              {
+                "label": "CASE · INFOR 2024",
+                "text": "KAS: Ukrainian citizen entered with ~PLN 17M cash, declared only EUR 20k — case of illegal import and evasion of declaration.",
+                "isCase": true,
+                "links": [
+                  {
+                    "url": "https://www.infor.pl/prawo/nowosci-prawne/6713477,kas-ukrainka-wjezdzala-do-polski-z-gotowka-o-rownowartosci-ponad-17-mln-zl-zglosila-tylko-20-tys-euro.html",
+                    "text": "infor.pl — KAS case PLN 17M"
+                  }
+                ]
+              },
+              {
+                "label": "CASE · PODKARPACIE 2024",
+                "text": "Subcarpathian KAS unit (2024): 130+ cases of illegal cash movement, over EUR 2.6M seized. Typical scenario — no declaration or underreporting on crossing from UA.",
+                "isCase": true,
+                "links": [
+                  {
+                    "url": "https://www.gov.pl/web/kas/wykroczenia-przy-przewozie-srodkow-pienieznych",
+                    "text": "gov.pl / KAS — offences 2024"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "crypto",
+            "title": "Cryptocurrency as an intermediate step",
+            "tag": "up to 8 years",
+            "reasons": [
+              {
+                "label": "TRANSPARENCY · GIIF",
+                "text": "On-chain analysis (Chainalysis, Reactor, etc.) — GIIF and banks receive reports on risky wallets. “Bought USDT — sold for PLN” does not remove source questions: on fiat withdrawal the bank requires the same package as for cash (contract, taxes, statements).",
+                "links": [
+                  {
+                    "url": "https://www.gov.pl/web/finance/wykorzystanie-technologii-blockchain-w-systemie-aml",
+                    "text": "gov.pl — blockchain in AML/GIIF system"
+                  },
+                  {
+                    "url": "https://www.gov.pl/web/finance/komunikaty-giif",
+                    "text": "gov.pl — GIIF and crypto-assets"
+                  }
+                ]
+              },
+              {
+                "label": "KYC · BITOMATY · VASP",
+                "text": "From 2024–2025 Polish VASPs and crypto ATMs under tighter supervision: client identification, limits, reporting to GIIF (MiCA / AML Act). “No questions” exchange for large amounts is practically over.",
+                "links": [
+                  {
+                    "url": "https://eur-lex.europa.eu/legal-content/PL/TXT/?uri=CELEX:32023R1114",
+                    "text": "EUR-Lex — MiCA Regulation (EU)"
+                  },
+                  {
+                    "url": "https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica",
+                    "text": "ESMA — MiCA overview"
+                  },
+                  {
+                    "url": "https://www.knf.gov.pl/knf/pl/komponenty/img/KNF_Publikacje/2024/20241218_Krypto_AML_8834.pdf",
+                    "text": "KNF — crypto and AML (PDF)"
+                  }
+                ]
+              },
+              {
+                "label": "CRIMINAL · CRIMINAL CODE",
+                "text": "Money laundering (Criminal Code art. 299) — 6 months to 8 years; higher rates for organized groups. Cryptocurrencies in Polish cases 2024–2025 are often linked to human trafficking and mule transfers.",
+                "links": [
+                  {
+                    "url": "https://lexlege.pl/kk/art-299/",
+                    "text": "Criminal Code art. 299 — text"
+                  },
+                  {
+                    "url": "https://gazeta.policja.pl/997/archiwum-1/2024/numer-45-092024-r/251365,Kryptowaluty-podazaj-za-pieniedzmi.html",
+                    "text": "Police Gazette — crypto and GIIF"
+                  }
+                ]
+              },
+              {
+                "label": "CASE · CBŚP 2025",
+                "text": "Central Bureau of Investigation (2025): 10 Ukrainian citizens detained in Warsaw, Łódź, Wrocław; ~30 suspects in money laundering via cryptocurrencies (linked to human trafficking); 12 convicted at earlier stages.",
+                "isCase": true,
+                "links": [
+                  {
+                    "url": "https://www.bankier.pl/wiadomosc/Handel-ludzmi-i-pranie-pieniedzy-przez-kryptowaluty-10-Ukraincow-zatrzymanych-przez-CBSP-9124772.html",
+                    "text": "bankier.pl — 10 Ukrainians detained"
+                  },
+                  {
+                    "url": "https://www.policja.pl/pol/aktualnosci/273825,Koniec-dzialalnosci-kantorow-kryptowalutowych-rozbicie-zorganizowanej-grupy-prze.html",
+                    "text": "Policja.pl — crypto exchanges, money laundering"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "mule",
+            "title": "Someone else’s account (mule)",
+            "tag": "6 months–8 years",
+            "reasons": [
+              {
+                "label": "MECHANICS · PATTERN",
+                "text": "Money mule: cash deposit / incoming transfer to your account → quick transfer onward (often abroad or to crypto). Bank sees “deposit without income” + “immediate outflow”. Even without bad intent — risk of Criminal Code art. 299 (facilitating laundering).",
+                "links": [
+                  {
+                    "url": "https://lexlege.pl/kk/art-299/",
+                    "text": "Criminal Code art. 299 — money laundering"
+                  },
+                  {
+                    "url": "https://www.europol.europa.eu/publication-events/main-reports/internet-organised-crime-threat-assessment-iocta-2024",
+                    "text": "Europol IOCTA 2024 — money mules"
+                  }
+                ]
+              },
+              {
+                "label": "LIABILITY",
+                "text": "Criminal Code art. 299 §1: 6 months – 8 years (§4 up to 10 years in special circumstances). “They paid me PLN 500” is not a defence — court assesses whether you could not have known the criminal source. Using another person’s account to “legalize” apartment sale proceeds makes you a link without contract protection.",
+                "links": [
+                  {
+                    "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970553391",
+                    "text": "Criminal Code — ISAP"
+                  },
+                  {
+                    "url": "https://www.knf.gov.pl/knf/pl/komponenty/img/KNF_Ostrzezenia/2023/ostrzezenie_money_mule_2023.pdf",
+                    "text": "KNF — money mule warning (PDF)"
+                  }
+                ]
+              },
+              {
+                "label": "OPERATION · POLAND 2023",
+                "text": "Police / Central Bureau of Investigation (2023): large anti–money mule operation found 10,759 people in schemes; 1,013 arrests; significant share — foreigners, including Ukrainians in Poland (recruitment via Telegram/OLX).",
+                "isCase": true,
+                "links": [
+                  {
+                    "url": "https://cyberdefence24.pl/armia-i-sluzby/ukraincy-mulami-finansowymi-fala-zatrzyman",
+                    "text": "cyberdefence24.pl — Ukrainians as mules"
+                  },
+                  {
+                    "url": "https://www.policja.pl/pol/aktualnosci",
+                    "text": "Policja.pl — news (AML operations)"
+                  }
+                ]
+              },
+              {
+                "label": "BANK · GIIF",
+                "text": "Bank algorithms flag: cash deposit → fast SWIFT/SEPA transfer → account closed. GIIF receives SAR; account blocked pending explanation. For legalizing property sale proceeds a mule is not needed — you need your own account and documents.",
+                "links": [
+                  {
+                    "url": "https://www.pwc.pl/pl/artykuly/sprawozdanie-giif-za-2024-rok.html",
+                    "text": "PwC — GIIF 2024 (SAR, blocks)"
+                  },
+                  {
+                    "url": "https://www.ebf.eu/anti-money-laundering/dontbeamule-2019/",
+                    "text": "EBF #DontBeAMule — money mules"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "fake-contracts",
+            "title": "Sham contracts",
+            "tag": "up to 12 years",
+            "reasons": [
+              {
+                "label": "NOTARIES · AML",
+                "text": "Since 2022 notaries in Poland are AML obligated institutions (act + Ministry of Justice regulation). Sham deed, understated price, backdating — risk of refusal to certify and report to GIIF. Registry data is cross-checked with KAS and banks.",
+                "links": [
+                  {
+                    "url": "https://www.gov.pl/web/finance/ustawa-o-przeciwdzialaniu-praniu-pieniedzy",
+                    "text": "Ministry of Finance — AML Act"
+                  },
+                  {
+                    "url": "https://www.gov.pl/web/finanse/komunikat-nr-58-w-sprawie-raportowania-informacji-o-czynnosciach-notarialnych-przekazywanych-do-giif-i-szefa-kas",
+                    "text": "gov.pl — notaries and GIIF reporting"
+                  }
+                ]
+              },
+              {
+                "label": "CRIMINAL CODE · ARTICLES",
+                "text": "Document forgery (Criminal Code art. 271 — up to 5 years) + money laundering (art. 299 — up to 8 years) may cumulate; in serious cases (organized group) — higher limits. KAS: comparison of declared income with sham contracts.",
+                "links": [
+                  {
+                    "url": "https://lexlege.pl/kk/art-271/",
+                    "text": "Criminal Code art. 271"
+                  },
+                  {
+                    "url": "https://lexlege.pl/kk/art-299/",
+                    "text": "Criminal Code art. 299"
+                  },
+                  {
+                    "url": "https://www.gov.pl/web/kas/kontrole-podatkowe",
+                    "text": "gov.pl / KAS — audits"
+                  }
+                ]
+              },
+              {
+                "label": "CASE · PRZEMYŚL 2025",
+                "text": "Border Guard, December 2025: 8 Ukrainian citizens convicted; ~PLN 2.5M + EUR 316,000 “laundered” via 27 accounts at 8 banks; scheme period 2020–2023; sham contracts and transfers.",
+                "isCase": true,
+                "links": [
+                  {
+                    "url": "https://www.strazgraniczna.pl/pl/aktualnosci/15182,Wyprali-brudne-pieniadze-ponad-25-mln-zl-i-316-tys-euro.html",
+                    "text": "strazgraniczna.pl — money laundering case"
+                  }
+                ]
+              },
+              {
+                "label": "PRACTICE · BANK",
+                "text": "A Polish bank accepts a UA property sale contract only if: notarized form, tax paid, statements, logical chain (UA account → withdrawal/transfer → PL). “Contract for 50,000 but deposited 200,000” or unregistered contract — refusal or SAR.",
+                "links": [
+                  {
+                    "url": "https://www.knf.gov.pl/knf/pl/komponenty/img/KNF_Ostrzezenia/2022/ostrzezenie_aml_2022.pdf",
+                    "text": "KNF — AML for banks (PDF)"
+                  },
+                  {
+                    "url": "https://www.biznesinfo.pl/uwazaj-na-duze-wplaty-w-banku-giif-sprawdza-konta-polakow-i-szuka-nielegalnych-srodkow-ab-wds-140526",
+                    "text": "biznesinfo.pl — large deposits"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

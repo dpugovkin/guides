@@ -1,0 +1,40 @@
+{
+  "site": {
+    "title": "Poradniki Dimasika",
+    "metaDescription": "Praktyczne poradniki: legalizacja w Polsce środków ze sprzedaży nieruchomości na Ukrainie i inne tematy."
+  },
+  "language": {
+    "label": "Język",
+    "uk": "UA",
+    "en": "EN",
+    "pl": "PL",
+    "switching": "Zmiana języka…"
+  },
+  "currency": {
+    "usd": "USD",
+    "uah": "UAH"
+  },
+  "app": {
+    "loading": "Ładowanie…",
+    "loadError": "Nie udało się załadować aplikacji. Odśwież stronę."
+  },
+  "layout": {
+    "backToGuides": "Wszystkie poradniki",
+    "themeLight": "Jasny motyw",
+    "themeDark": "Ciemny motyw"
+  },
+  "legal": {
+    "siteDisclaimer": "Materiały na stronie mają charakter edukacyjny. Autor nie ponosi odpowiedzialności za decyzje podjęte na ich podstawie.",
+    "financialToolsDisclaimer": "Kalkulatory podają orientacyjne wyliczenia według uproszczonych zasad na dzień przeglądu. To nie jest porada podatkowa, prawna, księgowa ani inwestycyjna — przed działaniem skonsultuj się ze specjalistą."
+  },
+  "a11y": {
+    "increase": "Powiększ",
+    "decrease": "Pomniejsz"
+  },
+  "index": {
+    "title": "Poradniki Dimasika",
+    "subtitle": "Praktyczne narzędzia i krok po kroku omówienia trudnych tematów",
+    "metaTitle": "Poradniki Dimasika",
+    "emptyHint": "Wkrótce pojawią się nowe poradniki."
+  }
+}

@@ -1,0 +1,50 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Only the repository owner may deploy (push to main or workflow_dispatch).
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy-blocked-not-owner:
+    if: github.actor != 'dpugovkin'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Skip deploy
+        run: |
+          echo "Deploy skipped: only repository owner dpugovkin may deploy."
+          echo "Actor: ${{ github.actor }}"
+
+  build-deploy:
+    if: github.actor == 'dpugovkin'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: bash .github/scripts/install-linux-native.sh
+      - run: npm run lint
+      - run: npm run format:check
+      - run: npm test
+      - run: npm run test:locales
+      - run: npm run build
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,57 @@
+{
+  "guides": {
+    "calculator": {
+      "title": "Tax calculator for selling an apartment in Ukraine",
+      "description": "Sale price, sale order in the calendar year, PIT, military levy, stamp duty, notary — net amount in USD.",
+      "metaTitle": "Tax calculator for selling an apartment in Ukraine",
+      "subtitle": "How much remains after taxes and fees in Ukraine before legalizing funds in Poland"
+    },
+    "tax": {
+      "applyNet": "Apply ${{net}} to “After taxes in Ukraine”",
+      "exchangeRate": {
+        "loading": "Loading NBU exchange rate…",
+        "nbu": "NBU rate: {{rate}} UAH/USD ({{date}})",
+        "fallback": "NBU rate unavailable — using {{rate}} UAH/USD",
+        "refresh": "Refresh",
+        "refreshAria": "Refresh NBU exchange rate"
+      },
+      "inputs": {
+        "sharedTitle": "Shared parameters",
+        "sharedHint": "Full calculation of the seller’s costs in Ukraine; the net result can be carried over to the Poland legalization guide.",
+        "saleOrderLabel": "Residential property sales in the calendar year",
+        "saleOrderFirst": "1st",
+        "saleOrderSecond": "2nd",
+        "saleOrderThird": "3rd+",
+        "saleOrderSecondNote": "2nd sale: 5% PIT + 5% military levy on the contract price — even if ownership exceeds 3 years (Tax Code art. 172).",
+        "tenureDisabledNote": "Ownership period is counted only for the 1st sale in the year.",
+        "purchasePriceLabel": "Apartment purchase price",
+        "purchasePriceHint": "For 3rd+ sale: 18% PIT on profit (sale − purchase). If omitted — the full sale price is used for the estimate.",
+        "netHint": "After all seller costs in UA (see breakdown above) — basis for method 1 or 2.",
+        "priceLabel": "Apartment sale price",
+        "tenureLabel": "Ownership period",
+        "tenureMore": "over 3 years",
+        "tenureLess": "under 3 years",
+        "netLabel": "After taxes in Ukraine (USD)",
+        "currency": "USD"
+      },
+      "result": {
+        "label": "Costs when selling in Ukraine",
+        "salePrice": "Contract price",
+        "sellerTotal": "Total from seller",
+        "buyerNote": "Paid separately by the buyer (does not reduce your net amount):",
+        "netLabel": "After taxes in Ukraine",
+        "taxableProfit": "Profit for PIT: ${{profit}} (sale − ${{purchase}} purchase)",
+        "pitOnProfit": "18% on profit",
+        "footnote": "Tax Code art. 172: 1st (>3 yrs) — 0%/0%; 1st (<3 yrs) — 5%+5%; 2nd — 5%+5%; 3rd+ — 18% on profit + 5% military. Notary {{notaryUah}} UAH + certificates {{docsUah}} UAH at NBU rate.",
+        "lines": {
+          "pit": "PIT",
+          "military": "Military levy",
+          "stateDuty": "State duty (contract certification)",
+          "notary": "Notary services",
+          "docs": "Certificates, technical passport",
+          "pension": "Pension levy"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,570 @@
+{
+  "guides": {
+    "poland": {
+      "title": "Legalizacja w Polsce środków ze sprzedaży nieruchomości na Ukrainie",
+      "description": "Sprzedaż nieruchomości na UA → legalne środki w polskim banku. Dwa sposoby, kalkulator podatków i dokumentów.",
+      "metaTitle": "Legalizacja w Polsce środków ze sprzedaży nieruchomości na Ukrainie",
+      "subtitle": "Legalizacja w PL: kwota po podatkach na UA, dwa sposoby przewozu, pakiet dokumentów do banku",
+      "netSection": {
+        "title": "Po podatkach na Ukrainie",
+        "inputLabel": "Kwota netto (USD)",
+        "hint": "Wpisz kwotę po podatkach na Ukrainie — od niej liczone są poniżej sposoby legalizacji w Polsce. Nie jest powiązana z kalkulatorem w następnym bloku."
+      },
+      "taxCalcAccordion": {
+        "title": "Kalkulator podatków przy sprzedaży na Ukrainie",
+        "subtitle": "Osobno — nie zmienia kwoty powyżej",
+        "independentNote": "Pola tutaj są niezależne od „Po podatkach na Ukrainie”. Liczą tylko koszty sprzedaży na UA; wynik możesz ręcznie przenieść do pola powyżej.",
+        "guideLink": "Osobny poradnik z pełnym kalkulatorem"
+      },
+      "methods": {
+        "sectionTitle": "Wybierz legalny sposób",
+        "border": {
+          "title": "Sposób 1: przez granicę",
+          "short": "gotówka UA → kantor → deklaracje",
+          "intro": "Wypłata hrywny na Ukrainie, wymiana na USD, przewóz przez granicę z deklaracjami celnymi UA i PL, wpłata w banku w dniu przyjazdu."
+        },
+        "atm": {
+          "title": "Sposób 2: bankomat + kasa",
+          "short": "karta UA → ATM w PL → wpłata",
+          "intro": "Środki zostają na ukraińskiej karcie (rachunek w hrywnie). Wypłata w polskim bankomacie, zachowanie paragonu, potem wpłata gotówki w kasie własnego banku z tym samym pakietem dokumentów ze sprzedaży mieszkania — bez przewozu waluty przez granicę.",
+          "paramsTitle": "Parametry sposobu 2 (bankomat + kasa)",
+          "stepsTitle": "Krok po kroku",
+          "steps": [
+            "Przygotować pakiet o pochodzeniu środków: umowa sprzedaży (UA), potwierdzenie podatku, wyciągi z rachunków UA.",
+            "Wypłacić gotówkę w bankomacie polskiego banku kartą ukraińską — zachować paragon (data, kwota, bankomat).",
+            "W dniu wypłaty lub wkrótce potem wpłacić gotówkę w kasie polskiego banku, okazując dokumenty i paragony z ATM.",
+            "Limit karty UA wymusza kilka tygodniowych cykli — to nie jest „structuring”. Nie wypłacaj poniżej limitu „żeby nie rzucać się w oczy” i nie dodawaj zbędnych operacji; na każdy cykl — paragon ATM, wpłata w kasie, ten sam pakiet dokumentów."
+          ],
+          "cardsLabel": "Liczba kart (UA)",
+          "cardsHint": "{{cards}} × {{weeklyUah}} UAH/tydz. ≈ ${{perWeekUsd}}/tydz.",
+          "weeklyLimitLabel": "Limit wypłaty tygodniowo (UAH na 1 kartę)",
+          "weeklyLimitHint": "Limit w hrywnie na rachunku karty; w polskim ATM otrzymasz PLN po kursie sieci.",
+          "stats": {
+            "weeks": "tygodni wypłat",
+            "perWeekUah": "UAH tygodniowo (wszystkie karty)",
+            "perWeekUsd": "≈ USD tygodniowo (kurs {{rate}})"
+          },
+          "verdict": {
+            "label": "Podsumowanie dla sposobu 2",
+            "body": "Po podatkach potrzebujesz <strong>${{net}}</strong>. Przy {{cards}} {{cardsWord}} i <strong>{{weeklyUah}} UAH</strong>/tydz. na kartę (≈ <strong>${{perWeekUsd}}</strong>/tydz., łącznie <strong>{{perWeekUah}} UAH</strong>) — <strong>{{weeks}} {{weeksWord}}</strong> cykli ATM + kasa. Deklaracje celne nie są wymagane.",
+            "highlight": "Kluczowe dowody: paragony z bankomatu + potwierdzenie wpłaty w kasie banku + umowa sprzedaży i podatek na UA.",
+            "weeks_one": "tydzień",
+            "weeks_few": "tygodnie",
+            "weeks_many": "tygodni",
+            "cards_one": "karcie",
+            "cards_few": "kartach",
+            "cards_many": "kartach"
+          },
+          "withdrawalsTitle": "Szacunkowe wypłaty po tygodniach",
+          "withdrawalDesc": "paragon ATM → wpłata w kasie",
+          "withdrawalUsdNote": "ekwiw.",
+          "notSmurfingTitle": "Dlaczego to nie jest smurfing",
+          "notSmurfingIntro": "Smurfing to celowe dzielenie wpłat, by ominąć progi raportowania, bez przejrzystego źródła. Sposób 2 przy limicie karty UA z zewnątrz może wyglądać podobnie — ale logika jest inna, jeśli udokumentujesz to.",
+          "notSmurfingPoints": [
+            "Źródło znane z góry: umowa sprzedaży (UA), zapłacony podatek, wyciągi — środki są już Twoje na ukraińskiej karcie po sprzedaży, a nie „gotówka znikąd”.",
+            "Liczba cykli wynika z limitu wypłaty (UAH/tydz. na kartę), a nie z chęci trzymania każdej wpłaty „poniżej progu” banku.",
+            "Co tydzień — para ATM → kasa: paragon wypłaty + potwierdzenie wpłaty; kwoty się zgadzają, ten sam pakiet dokumentów.",
+            "Jeden właściciel, jeden łańcuch: bez cudzych rachunków, bez przelewów „w kółko” i bez zbędnych drobnych operacji ponad limit.",
+            "Na początku poinformuj bank (kasa / compliance): sprzedaż nieruchomości na UA, orientacyjnie ile tygodni i jaka kwota przy limicie — najlepiej na piśmie lub w formularzu KYC."
+          ],
+          "notSmurfingNote": "Bank i GIIF mogą pytać o serię wpłat — odpowiedź: limit karty + dokumenty na każdy cykl (nie smurfing z bloku „Schematy” poniżej).",
+          "notesTitle": "Ograniczenia i ryzyka",
+          "notes": [
+            "Rzeczywisty koszt: prowizja bankomatu (PL + emitent karty UA), kurs UAH→PLN gorszy niż NBU — przy wielu tygodniach straty mogą przewyższyć oszczędność z pominięcia wyjazdów przez granicę (porównaj ze sposobem 1 w kalkulatorze).",
+            "Główne ograniczenie — limit wypłaty na karcie UA (tydzień/dzień, czasem osobny limit „za granicą”); bank może tymczasowo zablokować serię dużych wypłat w ATM bez wcześniejszego zgłoszenia.",
+            "Potrzebny już otwarty rachunek w polskim banku; kasa może odmówić wpłaty bez pełnego pakietu lub gdy saldo nie zgadza się z wyjaśnionym pochodzeniem.",
+            "Każdy cykl — wypłata i wpłata w krótkim oknie; unikaj „gromadzenia” gotówki między tygodniami — ryzyko kradzieży i pytań, czemu wpłata nie w dniu ATM.",
+            "Proces trwa miesiącami — ryzyko dewaluacji hrywny na karcie i zmiany zasad banku; plan cykli lepiej ustalić z bankiem na starcie (patrz „Dlaczego to nie jest smurfing”)."
+          ]
+        }
+      },
+      "inputs": {
+        "borderParamsTitle": "Parametry sposobu 1 (granica)",
+        "banksLabel": "Banków do wypłaty hrywny",
+        "banksHint": "× 100 000 UAH/dzień (orient.) = {{perDay}} UAH/dzień",
+        "maxPerTripLabel": "Maksimum USD na jeden wyjazd",
+        "currency": "USD"
+      },
+      "verdict": {
+        "label": "Podsumowanie dla sposobu 1",
+        "body": "Po podatkach: <strong>${{net}}</strong>. Wypłata hrywny przy {{banks}} {{banksWord}} — <strong>{{days}} {{daysWord}}</strong>. Przewóz: <strong>{{trips}} {{tripsWord}}</strong> (do <strong>${{perTrip}}</strong> gotówki na wyjazd), wpłata w banku PL — orientacyjnie <strong>{{weeksMin}}–{{weeksMax}} tygodni</strong> łącznie z przygotowaniem.",
+        "highlight": "Na każdy wyjazd: 2. egzemplarz paragonu kantoru + deklaracja celna UA i PL + wpłata w banku w dniu przekroczenia.",
+        "banks_one": "banku",
+        "banks_few": "bankach",
+        "banks_many": "bankach",
+        "days_one": "dzień roboczy",
+        "days_few": "dni robocze",
+        "days_many": "dni roboczych",
+        "trips_one": "wyjazd",
+        "trips_few": "wyjazdy",
+        "trips_many": "wyjazdów"
+      },
+      "stats": {
+        "days": "dni roboczych wypłaty hrywny",
+        "trips": "wyjazdów przez granicę",
+        "perTrip": "USD na wyjazd (maks. {{max}})",
+        "weeks": "tygodni łącznie"
+      },
+      "schedule": {
+        "atmSummary": "{{count}} tygodni po ~${{typical}} (ekwiw.){{lastPart}}",
+        "atmSummaryLast": ", ostatni — ${{last}}",
+        "tripsSummary": "{{count}} wyjazdów po ${{typical}}{{lastPart}}",
+        "tripsSummaryLast": ", ostatni — ${{last}}",
+        "example": "np.: {{first}} → … → {{last}}"
+      },
+      "trips": {
+        "sectionTitle": "Wyjazdy przez granicę",
+        "desc": "deklaracja UA + deklaracja PL · wpłata w banku w dniu przyjazdu",
+        "badgeUa": "dekl. UA",
+        "badgePl": "dekl. PL",
+        "badgeOk": "✓ bank",
+        "trips_one": "wyjazd",
+        "trips_few": "wyjazdy",
+        "trips_many": "wyjazdów"
+      },
+      "docs": {
+        "border": {
+          "sectionTitle": "Dokumenty dla sposobu 1 (granica)",
+          "label": "Zabrać przy pierwszej wpłacie",
+          "items": [
+            "Notarialna umowa sprzedaży mieszkania (UA)",
+            "Potwierdzenie zapłaty podatku (UA)",
+            "Wyciągi z wypłat gotówki w bankach (UA)",
+            "2. egzemplarz paragonów wymiany UAH→USD (każdy wyjazd)",
+            "Kopie ukraińskich deklaracji celnych (każdy wyjazd)",
+            "Kopie polskich deklaracji celnych (każdy wyjazd)"
+          ]
+        },
+        "atm": {
+          "sectionTitle": "Dokumenty dla sposobu 2 (bankomat + kasa)",
+          "label": "Zabrać przy wpłacie w kasie",
+          "items": [
+            "Notarialna umowa sprzedaży mieszkania (UA)",
+            "Potwierdzenie zapłaty podatku (UA)",
+            "Wyciągi z ukraińskiego rachunku / karty (skąd środki)",
+            "Paragony z bankomatu za każdą wypłatę w Polsce",
+            "Potwierdzenia wpłaty gotówki w kasie banku (każda wpłata)",
+            "Pisemne wyjaśnienie dla banku: sprzedaż na UA, plan cykli wg limitu karty (data, orientacyjne kwoty)"
+          ]
+        }
+      },
+      "schemes": {
+        "sectionTitle": "Schematy, które nie działają",
+        "items": [
+          {
+            "id": "smurfing",
+            "title": "Wiele drobnych wpłat (smurfing)",
+            "tag": "kara 75% · do 8 lat",
+            "reasons": [
+              {
+                "label": "PRAWO · STRUCTURING",
+                "text": "Seria drobnych wpłat poniżej progów raportowania bez uzasadnienia ekonomicznego traktowana jest jako podejrzenie prania pieniędzy (ustawa AML 2018, m.in. art. 74 — obowiązek zgłoszenia). To nie jest legalne „dzielenie” środków ze sprzedaży mieszkania — nawet legalne źródło nie zdejmuje kontroli AML.",
+                "links": [
+                  {
+                    "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20180000688",
+                    "text": "Ustawa AML 2018 — tekst (ISAP)"
+                  },
+                  {
+                    "url": "https://lexlege.pl/kk/art-299/",
+                    "text": "KK art. 299 — pranie pieniędzy (do 8 lat)"
+                  }
+                ]
+              },
+              {
+                "label": "PROGI · BANKI",
+                "text": "Bank musi analizować operacje gotówkowe i serie wpłat oraz przekazywać informacje do GIIF (m.in. transakcje powyżej 15 000 EUR, podejrzane wzorce). Drobne wpłaty „pod próg” bank często sumuje w jeden profil klienta — to nie anonimowość.",
+                "links": [
+                  {
+                    "url": "https://www.gov.pl/web/finance/ustawa-o-przeciwdzialaniu-praniu-pieniedzy",
+                    "text": "MF — ustawa AML (przegląd)"
+                  },
+                  {
+                    "url": "https://www.biznesinfo.pl/uwazaj-na-duze-wplaty-w-banku-giif-sprawdza-konta-polakow-i-szuka-nielegalnych-srodkow-ab-wds-140526",
+                    "text": "biznesinfo.pl — agregacja i czerwone flagi"
+                  }
+                ],
+                "quote": "„Rozbicie kwoty nie tylko nie uchroni przed raportem do GIIF, ale niemal gwarantuje oznaczenie operacji czerwoną flagą.”",
+                "quoteLink": "https://www.biznesinfo.pl/uwazaj-na-duze-wplaty-w-banku-giif-sprawdza-konta-polakow-i-szuka-nielegalnych-srodkow-ab-wds-140526",
+                "quoteSource": "biznesinfo.pl / AB"
+              },
+              {
+                "label": "GIIF 2024 · LICZBY",
+                "text": "Raport GIIF za 2024: 8 129 SAR (+71% do typowego poziomu ~4,5 tys./rok); 4 765 postępowań analitycznych (+38,4%); 641 zablokowanych rachunków (+39%, suma ~148,5 mln zł); 532 zawiadomienia do organów (KAS, policja itd.); 50,34 mln transakcji ponad próg + 270 200 korekt.",
+                "links": [
+                  {
+                    "url": "https://www.gov.pl/web/finance/communication-no-95-on-the-publication-of-the-gifi-annual-report-for-2024",
+                    "text": "gov.pl — komunikat o raporcie GIIF 2024"
+                  },
+                  {
+                    "url": "https://www.gov.pl/attachment/ba0e56a9-0316-4666-884d-c20f4e3e738b",
+                    "text": "PDF — Sprawozdanie GIIF 2024 (pełny tekst)"
+                  },
+                  {
+                    "url": "https://www.pwc.pl/pl/artykuly/sprawozdanie-giif-za-2024-rok.html",
+                    "text": "PwC — podsumowanie raportu 2024"
+                  }
+                ]
+              },
+              {
+                "label": "SANKCJE",
+                "text": "Administracyjnie: kara do 75% kwoty transakcji (KKS art. 54) za naruszenie obowiązków AML. Karnie: KK art. 299 (od 6 mies. do 8 lat) + inne artykuły zależnie od roli. Blokada i zamrożenie rachunku — bez sądu na etapie AML.",
+                "links": [
+                  {
+                    "url": "https://arslege.pl/kodeks-karny-skarbowy/k12/a3286",
+                    "text": "KKS art. 54 — kara 75%"
+                  },
+                  {
+                    "url": "https://www.gov.pl/web/finance/publications-aml-ctf",
+                    "text": "MF — publikacje AML/CFT"
+                  }
+                ]
+              },
+              {
+                "label": "OPÓŹNIONE RYZYKO",
+                "text": "NIK (2024): GIIF otwiera postępowania analityczne średnio po ~360 dniach od zdarzenia; dane przechowywane 5 lat. „Minęło pół roku” — nie znaczy „zapomniano”.",
+                "links": [
+                  {
+                    "url": "https://www.nik.gov.pl/aktualnosci/przeciwdzialanie-praniu-pieniedzy-i-finansowaniu-terroryzmu.html",
+                    "text": "NIK — audyt AML 2024"
+                  },
+                  {
+                    "url": "https://www.gov.pl/web/finance/komunikaty-giif",
+                    "text": "gov.pl — komunikaty GIIF"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "loan",
+            "title": "Pożyczka",
+            "tag": "0,5% PCC · do 5 lat",
+            "reasons": [
+              {
+                "label": "PCC · KIEDY POWSTAJE PODATEK",
+                "text": "Pożyczka jako czynność cywilnoprawna — PCC 0,5% (tytuł V ustawy o PCC), płaci biorący. Podatek powstaje m.in. gdy umowa zawarta w PL albo gdy przedmiot pożyczki (pieniądze) jest w Polsce. „Umowa za granicą” bez PCC tylko gdy oba warunki: umowa poza PL i środki poza PL w chwili zawarcia — inaczej 0,5% od całości.",
+                "links": [
+                  {
+                    "url": "https://poradnikprzedsiebiorcy.pl/-pozyczka-otrzymana-z-zagranicy-czy-podlega-opodatkowaniu-w-polsce",
+                    "text": "poradnikprzedsiebiorcy.pl — pożyczka z zagranicy"
+                  },
+                  {
+                    "url": "https://ksiegowosc.infor.pl/podatki/pcc/2759488,Kiedy-zaplacimy-podatek-PCC-od-pozyczek-udzielonych-przez-podmiot-zagraniczny.html",
+                    "text": "Infor.pl — PCC od pożyczki zagranicznej"
+                  },
+                  {
+                    "url": "http://www.podatekpcc.pl/artykul,13861,pcc-od-zagranicznej-umowy-pozyczki-interpretacja-indywidualna.html",
+                    "text": "podatekpcc.pl — interpretacja indywidualna"
+                  }
+                ]
+              },
+              {
+                "label": "FIKTYWNA POŻYCZKA · KK",
+                "text": "Pożyczka bez realnego zwrotu, podrobiona umowa lub fikcyjny pożyczający — art. 271 KK (fałszerstwo dokumentu, do 5 lat) i możliwa art. 299 (pranie). Bank przy wpłacie gotówki i tak wymaga wyjaśnienia pochodzenia: kto pożyczył, skąd u niego pieniądze, czemu gotówka, czemu nie bezpośredni przelew ze sprzedaży nieruchomości.",
+                "links": [
+                  {
+                    "url": "https://lexlege.pl/kk/art-271/",
+                    "text": "KK art. 271 — fałszerstwo dokumentu"
+                  },
+                  {
+                    "url": "https://www.pit.pl/aktualnosci/umowa-pozyczki-bez-pcc-jesli-pieniadze-sa-za-granica-916951",
+                    "text": "pit.pl — PCC a miejsce środków"
+                  }
+                ]
+              },
+              {
+                "label": "AML · BANK",
+                "text": "Instytucja obowiązana musi ustalić beneficjenta rzeczywistego i źródło pochodzenia środków (ustawa AML). Pożyczka od znajomego bez śladu w bankowości (wypłaty, przelewy, deklaracje) często kończy się odmową przyjęcia wpłaty lub SAR do GIIF — tak samo jak przy „prostej” gotówce.",
+                "links": [
+                  {
+                    "url": "https://www.gov.pl/web/finance/ustawa-o-przeciwdzialaniu-praniu-pieniedzy",
+                    "text": "MF — obowiązki instytucji AML"
+                  },
+                  {
+                    "url": "https://www.podatki.egospodarka.pl/99138,Podatek-PCC-gdy-umowa-pozyczki-zawarta-za-granica,1,69,1.html",
+                    "text": "eGospodarka.pl — umowa za granicą a PCC"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "no-declaration",
+            "title": "Brak deklaracji na granicy",
+            "tag": "konfiskata · 50% · 5 lat",
+            "reasons": [
+              {
+                "label": "PRÓG · UE",
+                "text": "Przy przekroczeniu zewnętrznej granicy UE gotówkę od równowartości 10 000 EUR (wszystkie waluty łącznie, czeki podróżne, złoto itd.) trzeba zgłosić pisemnie w KAS. W Polsce także deklaracja elektroniczna przez PUESC przed przekroczeniem. Nie „10 tys. na osobę” — suma na jedną osobę w jednym przekroczeniu.",
+                "links": [
+                  {
+                    "url": "https://granica.gov.pl/j/index.php/812",
+                    "text": "granica.gov.pl — przewóz środków pieniężnych"
+                  },
+                  {
+                    "url": "https://eur-lex.europa.eu/legal-content/PL/TXT/?uri=CELEX:32018R1672",
+                    "text": "EUR-Lex — rozporządzenie UE 2018/1672"
+                  },
+                  {
+                    "url": "https://www.infor.pl/prawo/nowosci-prawne/limity-przewozu-gotowki-przez-granice",
+                    "text": "Infor.pl — limity i deklaracja gotówki"
+                  }
+                ]
+              },
+              {
+                "label": "SANKCJE · PL",
+                "text": "KKS art. 106d: niezgodne z prawdą zgłoszenie lub brak zgłoszenia — grzywna do 720 stawek dziennych; przy większych kwotach — odpowiedzialność karna, konfiskata środków. Art. 106f/106h — dodatkowe wykroczenia przy wwiezie/wywozie. Praktyka KAS: konfiskata + kara do 50% od niezadeklarowanej gotówki.",
+                "links": [
+                  {
+                    "url": "https://arslege.pl/kodeks-karny-skarbowy/k12/a3288",
+                    "text": "KKS art. 106f — brak zgłoszenia"
+                  },
+                  {
+                    "url": "https://arslege.pl/kodeks-karny-skarbowy/k12/a3290",
+                    "text": "KKS art. 106d — fałszywe zgłoszenie"
+                  },
+                  {
+                    "url": "https://www.gov.pl/web/kas/przewoz-srodkow-pienieznych",
+                    "text": "gov.pl / KAS — informacja urzędowa"
+                  }
+                ]
+              },
+              {
+                "label": "SANKCJE · UA",
+                "text": "Przy wywozie z Ukrainy bez deklaracji (ponad ustalone limity) — konfiskata, kara do 20% (kodeks podatkowy UA), odpowiedzialność karna za przemyt walut. Podwójna granica UA→PL = dwa kontrole.",
+                "links": [
+                  {
+                    "url": "https://bank.gov.ua/ua/markets/liberalization/export-cash-abroad",
+                    "text": "NBU — wywóz gotówki za granicę"
+                  },
+                  {
+                    "url": "https://news.dtkt.ua/state/zed/98331-vivezennia-valiutnix-cinnostei-za-mezi-ukrayini-roziasnennia-vid-dms",
+                    "text": "dtkt.ua — wyjaśnienie Służby Celnej (10 000 €)"
+                  }
+                ]
+              },
+              {
+                "label": "SPRAWA · INFOR 2024",
+                "text": "KAS: obywatelka Ukrainy wjechała z gotówką ~17 mln zł, w deklaracji podała tylko 20 tys. euro — sprawa o nielegalny wwóz i uchylenie się od zgłoszenia.",
+                "isCase": true,
+                "links": [
+                  {
+                    "url": "https://www.infor.pl/prawo/nowosci-prawne/6713477,kas-ukrainka-wjezdzala-do-polski-z-gotowka-o-rownowartosci-ponad-17-mln-zl-zglosila-tylko-20-tys-euro.html",
+                    "text": "infor.pl — sprawa KAS 17 mln zł"
+                  }
+                ]
+              },
+              {
+                "label": "SPRAWA · PODKARPACIE 2024",
+                "text": "Podkarpacki oddział KAS (2024): 130+ przypadków nielegalnego przewozu gotówki, wydzielono ponad 2,6 mln EUR. Typowy scenariusz — brak deklaracji lub zaniżenie przy przekroczeniu z UA.",
+                "isCase": true,
+                "links": [
+                  {
+                    "url": "https://www.gov.pl/web/kas/wykroczenia-przy-przewozie-srodkow-pienieznych",
+                    "text": "gov.pl / KAS — wykroczenia 2024"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "crypto",
+            "title": "Kryptowaluta jako pośredni krok",
+            "tag": "do 8 lat",
+            "reasons": [
+              {
+                "label": "PRZEJRZYSTOŚĆ · GIIF",
+                "text": "Łańcuch on-chain jest analizowany (Chainalysis, Reactor itd.) — GIIF i banki dostają raporty o ryzykownych portfelach. „Kupiłem USDT — sprzedałem za PLN” nie usuwa pytań o źródło: przy wypłacie do fiat bank wymaga tego samego pakietu co przy gotówce (umowa, podatki, wyciągi).",
+                "links": [
+                  {
+                    "url": "https://www.gov.pl/web/finance/wykorzystanie-technologii-blockchain-w-systemie-aml",
+                    "text": "gov.pl — blockchain w systemie AML/GIIF"
+                  },
+                  {
+                    "url": "https://www.gov.pl/web/finance/komunikaty-giif",
+                    "text": "gov.pl — GIIF i kryptoaktywa"
+                  }
+                ]
+              },
+              {
+                "label": "KYC · BITOMATY · VASP",
+                "text": "Od 2024–2025 polskie VASP i bitomaty pod zaostrzonym nadzorem: identyfikacja klienta, limity, raportowanie do GIIF (MiCA / ustawa AML). Wymiana „bez pytań” na duże kwoty — praktycznie skończona.",
+                "links": [
+                  {
+                    "url": "https://eur-lex.europa.eu/legal-content/PL/TXT/?uri=CELEX:32023R1114",
+                    "text": "EUR-Lex — rozporządzenie MiCA (UE)"
+                  },
+                  {
+                    "url": "https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica",
+                    "text": "ESMA — przegląd MiCA"
+                  },
+                  {
+                    "url": "https://www.knf.gov.pl/knf/pl/komponenty/img/KNF_Publikacje/2024/20241218_Krypto_AML_8834.pdf",
+                    "text": "KNF — krypto i AML (PDF)"
+                  }
+                ]
+              },
+              {
+                "label": "KARNE · KK",
+                "text": "Pranie pieniędzy (KK art. 299) — od 6 mies. do 8 lat; przy grupie zorganizowanej — wyższe stawki. Kryptowaluty w polskich sprawach 2024–2025 często łączone z handlem ludźmi i transferami mule.",
+                "links": [
+                  {
+                    "url": "https://lexlege.pl/kk/art-299/",
+                    "text": "KK art. 299 — tekst"
+                  },
+                  {
+                    "url": "https://gazeta.policja.pl/997/archiwum-1/2024/numer-45-092024-r/251365,Kryptowaluty-podazaj-za-pieniedzmi.html",
+                    "text": "Gazeta Policyjna — krypto i GIIF"
+                  }
+                ]
+              },
+              {
+                "label": "SPRAWA · CBŚP 2025",
+                "text": "CBŚP (2025): 10 obywateli Ukrainy zatrzymanych w Warszawie, Łodzi, Wrocławiu; ~30 podejrzanych w sprawie o pranie przez kryptowaluty (związek z handlem ludźmi); 12 osób skazanych na wcześniejszych etapach.",
+                "isCase": true,
+                "links": [
+                  {
+                    "url": "https://www.bankier.pl/wiadomosc/Handel-ludzmi-i-pranie-pieniedzy-przez-kryptowaluty-10-Ukraincow-zatrzymanych-przez-CBSP-9124772.html",
+                    "text": "bankier.pl — 10 Ukraińców zatrzymanych"
+                  },
+                  {
+                    "url": "https://www.policja.pl/pol/aktualnosci/273825,Koniec-dzialalnosci-kantorow-kryptowalutowych-rozbicie-zorganizowanej-grupy-prze.html",
+                    "text": "Policja.pl — kantory krypto, pranie pieniędzy"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "mule",
+            "title": "Cudzy rachunek (mule)",
+            "tag": "6 mies.–8 lat",
+            "reasons": [
+              {
+                "label": "MECHANIKA · WZORZEC",
+                "text": "Money mule: wpłata gotówki / przyjęcie przelewu na swój rachunek → szybki przelew dalej (często za granicę lub w krypto). Bank widzi „wpłatę bez dochodu” + „natychmiastowy wypływ”. Nawet bez złej woli — ryzyko KK art. 299 (ułatwianie prania).",
+                "links": [
+                  {
+                    "url": "https://lexlege.pl/kk/art-299/",
+                    "text": "KK art. 299 — pranie pieniędzy"
+                  },
+                  {
+                    "url": "https://www.europol.europa.eu/publication-events/main-reports/internet-organised-crime-threat-assessment-iocta-2024",
+                    "text": "Europol IOCTA 2024 — money mules"
+                  }
+                ]
+              },
+              {
+                "label": "ODPOWIEDZIALNOŚĆ",
+                "text": "KK art. 299 §1: 6 miesięcy – 8 lat (§4 do 10 lat w szczególnych okolicznościach). „Dostawałem 500 zł” nie zwalnia — sąd ocenia, czy nie mogłeś nie wiedzieć o przestępczym źródle. Cudzy rachunek do „legalizacji” ze sprzedaży mieszkania = jesteś ogniwem bez ochrony umową.",
+                "links": [
+                  {
+                    "url": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970553391",
+                    "text": "Kodeks karny — ISAP"
+                  },
+                  {
+                    "url": "https://www.knf.gov.pl/knf/pl/komponenty/img/KNF_Ostrzezenia/2023/ostrzezenie_money_mule_2023.pdf",
+                    "text": "KNF — ostrzeżenie money mule (PDF)"
+                  }
+                ]
+              },
+              {
+                "label": "OPERACJA · POLSKA 2023",
+                "text": "Policja / CBŚP (2023): w dużej operacji przeciw money mules wykryto 10 759 osób w schematach; 1 013 zatrzymań; znacząca część — cudzoziemcy, w tym Ukraińcy w Polsce (rekrutacja przez Telegram/OLX).",
+                "isCase": true,
+                "links": [
+                  {
+                    "url": "https://cyberdefence24.pl/armia-i-sluzby/ukraincy-mulami-finansowymi-fala-zatrzyman",
+                    "text": "cyberdefence24.pl — Ukraińcy jako mule"
+                  },
+                  {
+                    "url": "https://www.policja.pl/pol/aktualnosci",
+                    "text": "Policja.pl — aktualności (operacje AML)"
+                  }
+                ]
+              },
+              {
+                "label": "BANK · GIIF",
+                "text": "Algorytmy banków oznaczają: wpłata gotówki → szybki przelew SWIFT/SEPA → zamknięcie rachunku. GIIF dostaje SAR; rachunek blokowany do wyjaśnienia. Do legalizacji środków ze sprzedaży nieruchomości mule nie jest potrzebny — potrzebny własny rachunek i dokumenty.",
+                "links": [
+                  {
+                    "url": "https://www.pwc.pl/pl/artykuly/sprawozdanie-giif-za-2024-rok.html",
+                    "text": "PwC — GIIF 2024 (SAR, blokady)"
+                  },
+                  {
+                    "url": "https://www.ebf.eu/anti-money-laundering/dontbeamule-2019/",
+                    "text": "EBF #DontBeAMule — money mules"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "fake-contracts",
+            "title": "Fikcyjne umowy",
+            "tag": "do 12 lat",
+            "reasons": [
+              {
+                "label": "NOTARIUSZE · AML",
+                "text": "Od 2022 notariusze w Polsce są instytucjami obowiązanymi AML (ustawa + rozporządzenie MS). Fikcyjny akt, zaniżona cena, datowanie wstecz — ryzyko odmowy poświadczenia i zgłoszenia do GIIF. Dane z rejestrów są weryfikowane z KAS i bankami.",
+                "links": [
+                  {
+                    "url": "https://www.gov.pl/web/finance/ustawa-o-przeciwdzialaniu-praniu-pieniedzy",
+                    "text": "MF — ustawa AML"
+                  },
+                  {
+                    "url": "https://www.gov.pl/web/finanse/komunikat-nr-58-w-sprawie-raportowania-informacji-o-czynnosciach-notarialnych-przekazywanych-do-giif-i-szefa-kas",
+                    "text": "gov.pl — notariusze i raportowanie do GIIF"
+                  }
+                ]
+              },
+              {
+                "label": "KK · ARTYKUŁY",
+                "text": "Fałszerstwo dokumentu (KK art. 271 — do 5 lat) + pranie pieniędzy (art. 299 — do 8 lat) mogą się kumulować; w ciężkich przypadkach (grupa zorganizowana) — wyższe granice. KAS: porównanie zadeklarowanych dochodów z fikcyjnymi umowami.",
+                "links": [
+                  {
+                    "url": "https://lexlege.pl/kk/art-271/",
+                    "text": "KK art. 271"
+                  },
+                  {
+                    "url": "https://lexlege.pl/kk/art-299/",
+                    "text": "KK art. 299"
+                  },
+                  {
+                    "url": "https://www.gov.pl/web/kas/kontrole-podatkowe",
+                    "text": "gov.pl / KAS — kontrole"
+                  }
+                ]
+              },
+              {
+                "label": "SPRAWA · PRZEMYŚL 2025",
+                "text": "SG (grudzień 2025): 8 obywateli Ukrainy skazanych; ~2,5 mln zł + 316 000 EUR „wypranych” przez 27 rachunków w 8 bankach; okres schematu 2020–2023; fikcyjne umowy i przelewy.",
+                "isCase": true,
+                "links": [
+                  {
+                    "url": "https://www.strazgraniczna.pl/pl/aktualnosci/15182,Wyprali-brudne-pieniadze-ponad-25-mln-zl-i-316-tys-euro.html",
+                    "text": "strazgraniczna.pl — sprawa o pranie pieniędzy"
+                  }
+                ]
+              },
+              {
+                "label": "PRAKTYKA · BANK",
+                "text": "Polski bank przyjmuje umowę sprzedaży nieruchomości z UA tylko gdy: forma notarialna, podatek, wyciągi, logiczny łańcuch (rachunek UA → wypłata/przelew → PL). „Umowa na 50 000, a wpłacono 200 000” lub umowa bez rejestracji — odmowa lub SAR.",
+                "links": [
+                  {
+                    "url": "https://www.knf.gov.pl/knf/pl/komponenty/img/KNF_Ostrzezenia/2022/ostrzezenie_aml_2022.pdf",
+                    "text": "KNF — AML dla banków (PDF)"
+                  },
+                  {
+                    "url": "https://www.biznesinfo.pl/uwazaj-na-duze-wplaty-w-banku-giif-sprawdza-konta-polakow-i-szuka-nielegalnych-srodkow-ab-wds-140526",
+                    "text": "biznesinfo.pl — duże wpłaty"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

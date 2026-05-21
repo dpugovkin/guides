@@ -1,0 +1,40 @@
+{
+  "site": {
+    "title": "Guides by Dimasik",
+    "metaDescription": "Practical guides: legalizing in Poland funds from Ukrainian property sales and other topics."
+  },
+  "language": {
+    "label": "Language",
+    "uk": "UA",
+    "en": "EN",
+    "pl": "PL",
+    "switching": "Switching language…"
+  },
+  "currency": {
+    "usd": "USD",
+    "uah": "UAH"
+  },
+  "app": {
+    "loading": "Loading…",
+    "loadError": "Failed to load the app. Please refresh the page."
+  },
+  "layout": {
+    "backToGuides": "All guides",
+    "themeLight": "Light theme",
+    "themeDark": "Dark theme"
+  },
+  "legal": {
+    "siteDisclaimer": "Content on this site is for educational purposes. The author is not liable for decisions made based on it.",
+    "financialToolsDisclaimer": "Calculators provide approximate figures using simplified rules as of the date viewed. This is not tax, legal, accounting, or investment advice — consult a professional before acting."
+  },
+  "a11y": {
+    "increase": "Increase",
+    "decrease": "Decrease"
+  },
+  "index": {
+    "title": "Guides by Dimasik",
+    "subtitle": "Practical tools and step-by-step breakdowns of complex topics",
+    "metaTitle": "Guides by Dimasik",
+    "emptyHint": "New guides coming soon."
+  }
+}
